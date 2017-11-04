@@ -1,0 +1,337 @@
+@import url("tabs.css");
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+@font-face {
+font-family: 'SegoeWPN';
+font-style: normal;
+font-weight: normal;
+src: local('SegoeWPN'), url('../fonts/SegoeWPN.woff') format('woff');
+}
+
+@font-face {
+font-family: 'StRyde';
+font-style: normal;
+font-weight: normal;
+src: local('StRyde'), url('../fonts/StRyde.otf') format('otf');
+}
+
+@font-face {
+font-family: 'SegoeWP';
+font-style: normal;
+font-weight: lighter;
+src: local('SegoeWP'), url('../fonts/SegoeWP.ttf') format('ttf');
+}
+
+body {
+	font-family: 'SegoeWP', 'OpenSans', sans-serif;
+}
+
+p {
+	font-family: 'OpenSans';
+}
+
+.navbar {
+	max-width: 1024px;
+	height: 100px;
+	margin: 0 auto;
+	&__logo {
+		width: 178px;
+		margin-left: 35px;
+		&-img {
+			margin-top: 23px;
+			float: left;
+		}
+
+		&-inim {
+			font-family: 'StRyde';
+			font-size: 43px;
+			color: #038c8c;
+			font-weight: 400;
+			margin-top: 28px;
+			margin-left: 8px;
+			display: inline-block;
+		}
+	}
+
+	&__menu {
+		float: right;
+		margin-top: -40px;
+		&-list {
+			list-style: none;
+			font-family: 'SegoeWPN';
+			font-size: 19px;
+			color: #565656;
+		}
+
+		&-lists {
+			display: inline-block;
+			margin-right: 18px;
+			margin-left: 18px;
+			&>a {
+				text-decoration: none;
+				color: #565656;
+				&:hover, &:active {
+					color: #069492;
+				}
+			}
+		}
+	}
+}
+
+
+.addsection {
+	width: 100%;
+	height: 500px;
+	background: linear-gradient(to bottom right, #00727c, #10d0b6);
+	background-position: center;
+	&__shape {
+		padding-top: 50px;
+		padding-left: 195px;
+		float: left;
+		&-normal {
+			width: 334px;
+			height: 334px;
+			background-color: rgb(19,185,171);
+			border-radius: 170px;
+			display: block;
+			margin-top: -365px;
+			margin-left: 60px;
+		}
+
+		&-light1 {
+			width: 394px;
+			height: 394px;
+			background-color: rgba(19,185,171,0.2);
+			border-radius: 200px;
+			display: block;
+			margin-top: -422px;
+			margin-left: 29px;
+		}
+
+		&-light2 {
+			width: 452px;
+			height: 452px;
+			background-color: rgba(19,185,171,0.2);
+			border-radius: 250px;
+			display: block;
+		}
+
+		&-img {
+			margin-top: -365px;
+			margin-left: 113px;
+		}
+	}
+
+	&__offer {
+		padding-top: 182px;
+		.earth {
+			float: left;
+			margin-right: 10px;
+		}
+		&-tx {
+			font-family: 'SegoeWPN';
+			font-size: 21px;
+			color: #fff;
+			text-transform: uppercase;
+		}
+	}
+
+	&__myapp {
+		font-family: 'SegoeWPN';
+		margin-top: 60px;
+		color: #fff;
+	}
+
+	&__buy {
+		margin-top: 30px;
+		margin-left: -5px;
+		float: left;
+		&-cart {
+			float: left;
+			margin-top: -7px;
+		}
+		&-href {
+			padding: 7px 22px;
+			background-color: #54d3c3;
+			font-family: 'SegoeWPN';
+			font-size: 21px;
+			color: #fff;
+			text-decoration: none;
+			margin-top: 2px;
+			margin-left: -2px;
+			&:hover {
+				background-color: #259d8e;
+			}
+		}
+	}
+
+	&__version {
+		float: right;
+		margin-top: -377px;
+		margin-right: 0px;
+		&-platforms {
+			list-style: none;
+		}
+
+		&-platform {
+			display: inline-block;
+			margin-right: -5px;
+			&:nth-child(1) {
+				background-color: rgba(0,119,126,0.2);
+				width: 119px;
+				height: 123px;
+				&>img {
+					padding: 30px 27px;
+				}
+				&:hover, &:active {
+					background-color: rgba(0,119,126,0.8);
+					cursor: pointer;
+				}
+			}
+
+			&:nth-child(2) {
+				background-color: rgba(0,119,126,0.6);
+				width: 119px;
+				height: 123px;
+				&>img {
+					padding: 29px 35px;
+				}
+				&:hover, &:active {
+					background-color: rgba(0,119,126,0.8);
+					cursor: pointer;
+				}
+			}
+
+			&:nth-child(3) {
+				background-color: rgba(0,119,126,0.8);
+				width: 119px;
+				height: 122px;
+				margin-right: 0;
+				&>img {
+					padding: 34px 47px;
+				}
+				&:hover, &:active {
+					background-color: rgba(0,119,126,0.8);
+					cursor: pointer;
+				}
+			}
+		}
+	}
+}
+
+.myapp {
+	text-transform: uppercase;
+	font-size: 39px;
+	color: #fff;
+}
+
+.myapp-p {
+	font-family: 'SegoeWPN', 'Open Sans', sans-serif;
+	font-size: 17px;
+	color: #fff;
+}
+
+
+.aboutmin {
+	margin-top: 50px;
+	&__tx {
+		text-align: center;
+		width: 916px;
+		margin: 0 auto 42px auto;
+		&>p {
+			font-family: 'SegoeWPN';
+			font-size: 15px;
+			color: #9f9f9f;
+		}
+	}
+	&__h {
+		color: #636363;
+		font-family: 'SegoeWPN';
+		font-size: 41px;
+		margin-bottom: 30px;
+	}
+
+	&__offer {
+		&-img {
+			margin-left: 462px;
+		}
+	}
+}
+
+.tab-img {
+	margin-top: 122px;
+	margin-left: -100px;
+	float: left;
+}
+
+.multitab-widget-content {
+	color: #fff;
+	&>h1 {
+		padding-top: 180px;
+	}
+	&>p {
+		font-family: 'SegoeWPN', 'Open Sans', sans-serif;
+		font-size: 17px;
+		text-transform: capitalize;
+	}
+}
+
+.cart2 {
+	margin-top: 35px;
+
+}
+
+.completed__left {
+	width: 784px;
+	float: left;
+	&>h1 {
+		font-size: 200px;
+		font-family: 'SegoeWPN';
+		font-weight: bold;
+		padding-top: 2px;
+		padding-left: 200px;
+	}
+	&>p {
+		font-size: 74px;
+		font-family: 'SegoeWPN';
+		font-weight: lighter;
+		margin-top: -30px;
+		margin-left: 15px;
+		text-transform: uppercase;
+		text-align: center;
+	}
+}
+
+.completed-right {
+	width: 495px;
+	height: 512px;
+	background-color: #49d7b0;
+	float: right;
+	&_arrows {
+		margin-top: 155px;
+		margin-left: 150px;
+	}
+}
+
+.line {
+	width: 100%;
+	color: rgba(152,152,152,0.2);
+	clear: both;
+}
+
+.footer {
+	height: 100px;
+	clear: both;
+}
+
+.footer__license {
+	font-family: 'SegoeWPN', 'Open Sans', sans-serif;
+	font-size: 18px;
+	color: rgb(152,152,152);
+	margin: 50px auto;
+	width: 300px;
+}
