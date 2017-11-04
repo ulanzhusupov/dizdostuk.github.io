@@ -1,0 +1,34 @@
+﻿@font-face {
+  font-family: "BebasNeue";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/BebasNeue.eot?#iefix") format("embedded-opentype"), url("../fonts/BebasNeue.woff") format("woff"), url("../fonts/BebasNeue.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Helvetica";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/Helvetica.eot?#iefix") format("embeddHelveticaBoldd-opentype"), url("../fonts/Helvetica.woff") format("woff"), url("../fonts/Helvetica.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-Roman";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeueCyr-Roman.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-Roman.woff") format("woff"), url("../fonts/HelveticaNeueCyr-Roman.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "HelveticaNeueCyr-MediumCond";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/HelveticaNeueCyr-MediumCond.eot?#iefix") format("embedded-opentype"), url("../fonts/HelveticaNeueCyr-MediumCond.woff") format("woff"), url("../fonts/HelveticaNeueCyr-MediumCond.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "SunsusWebissimo";
+  font-style: normal;
+  font-weight: normal;
+  src: url("../fonts/SunsusWebissimo.eot?#iefix") format("embedded-opentype"), url("../fonts/SunsusWebissimo.woff") format("woff"), url("../fonts/SunsusWebissimo.ttf") format("truetype");
+}

@@ -1,0 +1,420 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: OpenSans,sans-serif inherit;
+	font-size:16px;
+	color:#8b8b8b
+}
+h1{
+	font-family:OpenSans,sans-serif;
+	text-transform: uppercase;
+	font-weight:700;
+	font-size:60px;
+	color:#000;
+	margin-left: 0;
+
+}
+h2{
+	font-family: OpenSans,sans-serif;
+	text-transform: uppercase;
+	font-weight:600;
+	font-size:42px;
+	color:#585858;
+}
+h3 {
+	font-family: OpenSans, sans-serif;
+	font-weight: bolder;
+	font-size: 24px;
+	color: #737373;
+}
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+header{
+	background: url("../img/header.jpg") no-repeat;
+	height: 690px;
+}
+
+.menu-active{
+	background: #ff3f40;
+}
+.navbar {
+	background: #313030;
+	border-radius: 0;
+	margin-top: 30px;
+	margin-bottom: 0;
+	height: 88px;
+}
+
+.navbar-collapse{
+	padding:0;
+	margin-left: 357px;
+	font-family: Opensans,sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	text-transform: uppercase;
+}
+.navbar-nav > li > a{
+	line-height: 57px;
+}
+.navbar-collapse ul > li >a:hover{
+	color: #fff;
+	background: #f62b2b;
+}
+.navbar-collapse ul > li >a:visited{
+	color: #fff;
+	background: #ff3f40;
+}
+
+.head-left h1{
+	margin-top: 98px;
+	margin-left: -18px;
+}
+.head-left p {
+	margin-top: 38px;
+}
+.head-left .btn{
+	background: #ff3f40;
+	color: #fff;
+	padding: 20px 63px;
+	margin-top: 50px;
+}
+.head-left .btn:hover{
+	background: #f62b2b;
+	color: #ececec;
+	padding: 20px 63px;
+}
+
+.video{
+	border: 5px solid #fff;
+	border-radius: 4px;
+	margin-top: 102px;
+	box-shadow: 0 0 73px 1px rgba(0,0,0,0.3);
+}
+
+.left-content h2 {
+	text-transform: uppercase;
+	margin-top: 94px;
+	margin-bottom: 40px;
+}
+
+.left-content .content-btn {
+	color: #ff0000;
+	text-decoration: none;
+	padding: 20px 60px;
+	border: 2px solid #ff0000;
+	border-radius: 4px;
+	margin-top: 40px;
+}
+
+.left-content .content-btn:hover {
+	color: #ff8992;
+	text-decoration: none;
+	padding: 20px 60px;
+	border: 2px solid #ff8992;
+	border-radius: 4px;
+	margin-top: 40px;
+}
+
+.right-content .first-brakes {
+	margin-top: 94px;
+}
+
+.right-content h3 {
+	margin-top: 32px;
+	margin-bottom: 20px;
+}
+
+.right-content p {
+	margin-bottom: 42px;
+}
+
+.content hr {
+	margin-top: 90px;
+	margin-bottom: 0;
+	border: 1px solid #ececec;
+}
+
+.products {
+	text-align: center;
+}
+
+.products h2{
+	margin-top: 87px;
+	margin-bottom: 25px;
+}
+
+.products hr{
+	width: 130px;
+	border: 1px solid #ff0000;
+	margin-top: 34px;
+}
+
+.tab-lists ul{
+	font-family: 'OpenSans', sans-serif;
+	text-transform: uppercase;
+	font-weight: 300;
+	font-size: 18px;
+	color: #737373;
+}
+
+.navs {
+	list-style: none;
+	text-align: center;
+	margin-top: 88px;
+}
+
+.navs > li > a{
+	margin-right: 55px;
+	color: #737373;
+}
+
+.navs > li:last-child{
+	margin-left: 0;
+}
+
+.navs > li > a:hover {
+	color: #ff0000;
+	text-decoration: none;
+}
+
+.nav-alls > li {
+	float: left;
+}
+
+.nav-alls > li.active > a,
+.nav-alls > li.active > a:hover,
+.nav-alls > li.active > a:focus{
+	color: #ff0000;
+}
+
+.tab-content .tab-pane .first-img {
+	margin-top: 67px;
+	margin-bottom: 20px;
+}
+
+.tab-content .tab-pane img{
+	width: 280px;
+	height: 290px;
+}
+
+.team {
+	margin-top: 140px;
+}
+
+.team h2 {
+	margin: 0 0 40px 0;
+	padding: 0;
+}
+
+.team p {
+	margin: 0 0 37px 0;
+}
+
+.team hr{
+	width: 130px;
+	border: 1px solid #ff0000;
+	margin-top: 0px;
+}
+
+.waugh-pic img{
+	width: 320px;
+	height: 430px;
+	margin-top: 70px;
+}
+
+.waugh-human h3{
+	margin: 85px 0 37px 0;
+}
+
+.waugh-human ul{
+	list-style: none;
+	margin-top: 35px;
+}
+
+.waugh-human > ul > li{
+	float: left;
+	display: inline-block;
+	margin-right: 35px;
+}
+
+
+.waugh-human > ul > li > a{
+	font-size: 18px;
+	font-style: italic;
+	color: #737373;
+}
+
+.waugh-human > ul > li > a:hover{
+	text-decoration: none;
+	color: #ff2d2d;
+}
+
+.teams {
+	list-style: none;
+	margin-top: 120px;
+}
+
+.teams img {
+	width: 170px;
+}
+
+.teams > ul > li {
+	display: inline-block;
+	margin-right: 7px;
+}
+
+.subscribe {
+	background: url("../img/fly.jpg") no-repeat;
+	background-attachment: fixed;
+	margin-top: 100px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.h2-subs {
+	padding: 144px;
+}
+
+.h2-subs h2 {
+	text-transform: unset;
+	color: #fff;
+	font-size: 42px;
+	text-align: center;
+	margin-bottom: 37px;
+}
+
+.h2-subs p {
+	color: #fff;
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+.h2-subs .mail {
+	width: 518px;
+	height: 50px;
+	border: none;
+	border-radius: 4px;
+	padding-left: 23px;
+}
+
+.h2-subs .btn-warning {
+	background: #ff2d2d;
+	font-family: OpenSans, sans-serif;
+	font-weight: 600;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-left: 20px;
+	padding: 15px 40px;
+	border-radius: 4px;
+}
+
+.h2-subs .btn-warning:hover{
+	background: #f62b2b;
+	color: #ececec;
+}
+
+.get-touch {
+	margin-top: 108px;
+}
+
+.get-touch h2 {
+	margin-bottom: 55px;
+}
+
+.get-touch p {
+	margin-bottom: 55px;
+}
+
+.contacts hr {
+	width: 130px;
+	border: 1px solid #ff0000;
+	margin-top: 0px;
+	margin-bottom: 74px;
+}
+
+.contacts .name > input{
+	width: 320px;
+	height: 67px;
+	padding-left: 50px;
+	background: #e5e5e5;
+	border: none;
+	border-radius: 5px;
+}
+
+.contacts .comment > textarea{
+	width: 661px;
+	height: 245px;
+	padding-top: 34px;
+	padding-left: 50px;
+	padding-right: 50px;
+	padding-bottom: 34px;
+	background: #e5e5e5;
+	border: none;
+	border-radius: 5px;
+	margin-top: 45px;
+}
+
+.contacts .btn > button {
+	background: #ff3b3b;
+	font-family: OpenSans, sans-serif;
+	text-transform: uppercase;
+	font-weight: 600;
+	color: #fff;
+	border: none;
+	border-radius: 4px;
+	padding: 25px 275px;
+	margin-top: 20px;
+}
+
+.contacts .btn > button:hover {
+	background: #f33939;
+	color: #ececec;
+}
+
+.contact-info {
+	height: 460px;
+	background: #2d2d2d;
+	color: #fff;
+	padding-top: 147px;
+	padding-right: 50px;
+	padding-left: 80px;
+	margin-top: 426px;
+}
+
+.contact-info h4 {
+	text-transform: uppercase;
+	margin-bottom: 42px;
+}
+
+.footer {
+	background: #313030;
+	margin-top: 100px;
+	padding-top: 50px;
+	padding-bottom: 20px;
+}
+
+.footer .license{
+	color: #b8b8b8;
+}
+
+.footer .icons ul {
+	list-style: none;
+}
+
+.footer .icons ul > li {
+	display: inline-block;
+	color: #fff;
+	font-size: 24px;
+	margin-right: 7px;
+}
+
+.footer .icons ul > li > a:hover {
+	color: #ececec;
+	text-decoration: none;
+}

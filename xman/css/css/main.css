@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-image: url("../img/bg.png"); }
+
+section {
+  width: 1023px;
+  background: #e8e6e7 url("../img/shadow.png") no-repeat;
+  margin: 8px auto 0 auto; }
+
+a {
+  text-decoration: none;
+  color: #595959; }
+
+ul {
+  list-style-type: none; }
+  ul li {
+    float: left; }
+    ul li a {
+      display: inline;
+      width: 79px; }
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: red; }
+
+body input:required:valid,
+body textarea:required:valid {
+  color: green; }
+
+header {
+  background: url("../img/line-black.png") no-repeat; }
+  header .logo {
+    margin-top: 16px;
+    margin-left: 35px;
+    display: block;
+    float: left; }
+    header .logo p {
+      margin-top: -37px;
+      margin-left: 63px; }
+  header .top-bar {
+    float: right;
+    margin: 60px 35px 12px 0; }
+    header .top-bar a {
+      margin-right: 6px; }
+      header .top-bar a span {
+        margin-right: 0;
+        margin-left: 6px;
+        color: #c42d21; }
+      header .top-bar a span:hover {
+        color: orange; }
+
+.logo {
+  font-family: SunsusWebissimo, Myriad Pro, sans-serif;
+  font-size: 42px; }
+  .logo p {
+    color: #3f3f3f;
+    line-height: 3px; }
+    .logo p span {
+      color: #c42d21; }
+
+.top-bar {
+  font-family: Helvetica;
+  font-size: 14px; }
+  .top-bar a:hover {
+    color: orange; }
+
+nav {
+  width: 959px;
+  height: 33px;
+  margin: 86px auto 0 auto;
+  clear: both;
+  background-image: url("../img/bg-menu.png"); }
+  nav ul {
+    font-family: Helvetica;
+    font-size: 16px;
+    padding-top: 9px;
+    padding-left: 20px; }
+    nav ul li {
+      margin-right: 34px; }
+      nav ul li a {
+        color: #ececec; }
+      nav ul li a:hover {
+        color: orange;
+        font-weight: normal; }
+
+.number {
+  background-image: url("../img/bg-number.png");
+  width: 340px;
+  height: 34px;
+  display: block;
+  float: right;
+  margin-top: -9px; }
+  .number p {
+    margin-top: 9px;
+    margin-left: 104px;
+    font-family: Helvetica;
+    font-weight: bold;
+    color: #ececec; }
+
+.slider {
+  margin-top: 13px;
+  margin-left: 33px; }
