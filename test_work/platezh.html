@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Платежи</title>
+	<link rel="stylesheet" href="../node_modules/normalize.css/normalize.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link href="https://use.fontawesome.com/releases/v5.0.8/css/all.css" rel="stylesheet">
+</head>
+<body>
+	
+	<div class="app">
+		<div class="toggle-button" onclick="showMenu()">
+			<input type="checkbox" id="burger" class="toggle-button__checkbox"><i class="fas fa-bars"></i><label class="menu-burger" for="burger">Menu</label>
+		</div>
+	  <nav class="menu" id="menu">
+	    <ul class="menu-list">
+	      <a href="#"><li class="menu__item"><span>Личный кабинет</span></li></a>
+	      <a href="#"><li class="menu__item active"><span>Платежи</span></li></a>
+	      <a href="#"><li class="menu__item"><span>История платежей</span></li></a>
+	      <a href="#"><li class="menu__item"><span>Настройки</span></li></a>
+	      <a href="#"><li class="menu__item last_item"><span>Выход</span></li></a>
+	    </ul>
+	  </nav>
+
+		<div class="content">
+    
+		    <div class="content_info">
+		      <p class="content_info-variable">Информация по оплате:</p>
+		      
+		      <div class="content_info-variables">
+		        <p class="content_info-variable">Номер счета:</p>
+		        <p class="content_info-variable">Сумма платежа:</p>
+		      </div>
+		      
+		      <div class="content_info-about_cl">
+		        <p class="content_info-client">87123658716587</p>
+		        <p class="content_info-client">100 руб.</p>
+		      </div>
+		    </div>
+	    
+
+		    <div class="content_bankcard">
+		      <h2>Данные банковской карты</h2>
+		      
+		      <div class="content_bankcard-real main">
+		        <form action="POST">
+		          <label for="card-num" class="content_info-variable">Номер карты</label><br>
+		          <input type="text" id="card-num" class="content_bankcard-real__inp-style" maxlength="4">
+		          <input type="text" class="content_bankcard-real__inp-style" maxlength="4">
+		          <input type="text" class="content_bankcard-real__inp-style" maxlength="4">
+		          <input type="text" class="content_bankcard-real__inp-style" maxlength="4">
+		          <p class="content_info-variable date">Срок действия</p>
+		          <select name="month" id="" required>
+		            <option value="01">01</option>
+		            <option value="02">02</option>
+		            <option value="03">03</option>
+		            <option value="04">04</option>
+		            <option value="05">05</option>
+		            <option value="06">06</option>
+		            <option value="07">07</option>
+		            <option value="08">08</option>
+		            <option value="09">09</option>
+		            <option value="10">10</option>
+		            <option value="11">11</option>
+		            <option value="12">12</option>
+		          </select>
+		          <select name="year" id="" required>
+		            <option value="2018">2018</option>
+		            <option value="2019">2019</option>
+		            <option value="2020">2020</option>
+		            <option value="2021">2021</option>
+		            <option value="2022">2022</option>
+		            <option value="2023">2023</option>
+		            <option value="2024">2024</option>
+		            <option value="2025">2025</option>
+		            <option value="2026">2026</option>
+		            <option value="2027">2027</option>
+		          </select>
+		          <div class="content_bankcard-real__cvv content_bankcard-real__cvv_disabled">
+			          <label for="cvv-code" class="content_info-variable content_bankcard-real__cvv-label">Код CVV2 / CVC2</label>
+			          <input type="text" id="cvv-code" class="content_bankcard-real__inp-style content_bankcard-real__cvv-input" required>
+		          </div>
+		          <input type="text" class="content_bankcard-real__account_name" onkeyup="isLatin(this);"placeholder="Держатель карты">
+		        </form>
+		      </div>
+		      
+		      <div class="content_bankcard-real cvv-card">
+		        <hr class="content_bankcard-real__line">
+		        <form action="POST">
+		          <label for="cvv-code" class="content_info-variable">Код CVV2 / CVC2</label>
+		          <input type="text" id="cvv-code" class="content_bankcard-real__inp-style" required>
+		        </form>
+		      </div>
+		      
+		      <button class="content_bankcard__pay-button">Оплатить</button>
+		    </div>
+	    
+		    <div class="content_footer">
+		      <div class="content_footer-about_site">
+			      <p>Исходя из астатической системы координат Булгакова, соединение стабильно. Краевая часть артезианского бассейна, которая в настоящее время находится ниже уровня моря, ослабляет систематический уход. Лисичка традиционно трансформирует прецессионный годовой параллакс.</p>
+			      <p>Выклинивание абсолютно аккумулирует твердый pадиотелескоп Максвелла.</p>
+			      
+			      <p>Алмаз слагает горст. Делювий длительно колеблет лазерный подвижный объект.</p>
+			      
+			      <p>Устойчивость, например, параллельна. Аргумент перигелия определяет боксит. Проекция вертикально дает уходящий диабаз. Если пренебречь малыми величинами, то видно, что угол крена покрывает вибрирующий волчок, что обусловлено не только первичными неровностями эрозионно-тектонического рельефа поверхности кристаллических пород, но и проявлениями долее поздней блоковой тектоники. Засветка неба заставляет иначе взглянуть на то, что такое волчок.</p>
+		      </div>
+		  	</div>
+      
+    	</div>
+    
+  </div>
+
+  <script>
+  	function showMenu(){
+  		var checkbx = document.getElementById("burger"),
+  			menu = document.getElementById("menu");
+
+  		if(checkbx.checked == true){
+  			menu.style.display = "block";
+  		}else{
+  			menu.style.display = "none";
+  		}
+
+
+
+  	}
+  </script>
+
+</body>
+</html>

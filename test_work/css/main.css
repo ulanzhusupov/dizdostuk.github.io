@@ -1,0 +1,371 @@
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background-color: #101114;
+  font-family: 'Arial', sans-serif; }
+
+h2 {
+  font-size: 21px;
+  font-family: 'Open Sans';
+  font-weight: bold;
+  color: #383d43; }
+
+.app {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 10%;
+  width: 1000px;
+  display: flex; }
+  .app .toggle-button {
+    display: none; }
+
+.menu {
+  width: 317px;
+  height: 375px;
+  float: left;
+  background-color: #191c24;
+  display: block; }
+  .menu .menu-list {
+    list-style-type: none; }
+    .menu .menu-list a {
+      text-decoration: none;
+      font-size: 18px;
+      font-family: 'Open Sans', serif;
+      font-weight: bold;
+      color: #fff; }
+      .menu .menu-list a .menu__item {
+        height: 75px;
+        border-bottom: 1px solid #26282f; }
+        .menu .menu-list a .menu__item:hover {
+          background-color: #2a2d37;
+          color: #808592;
+          cursor: pointer; }
+        .menu .menu-list a .menu__item span {
+          position: relative;
+          top: 35%;
+          margin-left: 28px; }
+
+.content {
+  width: 638px;
+  height: 800px;
+  background-color: #f7f8f8;
+  position: relative; }
+  .content_info {
+    width: 310px;
+    height: 80px;
+    margin-top: 48px;
+    margin-left: 30px; }
+    .content_info p:nth-child(1) {
+      margin-bottom: 17px; }
+    .content_info-variables {
+      float: left;
+      margin-right: 40px; }
+      .content_info-variables p:nth-child(1) {
+        margin-bottom: 10px; }
+      .content_info-variables p:nth-child(2) {
+        margin-bottom: 0; }
+    .content_info-about_cl {
+      color: #373c43; }
+      .content_info-about_cl p:nth-child(1) {
+        margin-bottom: 10px; }
+      .content_info-about_cl p:nth-child(2) {
+        margin-bottom: 0; }
+  .content_bankcard {
+    margin-top: 37px;
+    margin-left: 30px; }
+    .content_bankcard .main {
+      float: left;
+      background-color: #f7f8f8; }
+    .content_bankcard-real {
+      width: 352px;
+      height: 245px;
+      border: 1px solid #e4e9ee;
+      border-radius: 10px;
+      margin-top: 22px; }
+      .content_bankcard-real form {
+        margin-top: 20px;
+        margin-left: 15px; }
+        .content_bankcard-real form .date {
+          margin-top: 18px;
+          margin-bottom: 8px; }
+        .content_bankcard-real form select {
+          width: 68px;
+          height: 40px;
+          padding-left: 5px;
+          font-size: 16px;
+          border: 1px solid #e4e9ee;
+          color: #373c43;
+          margin-right: 5px;
+          float: left; }
+      .content_bankcard-real__cvv {
+        position: relative;
+        top: -28px;
+        text-align: right;
+        margin-right: 15px; }
+        .content_bankcard-real__cvv label {
+          position: relative; }
+        .content_bankcard-real__cvv input {
+          width: 125px; }
+      .content_bankcard-real__cvv_disabled {
+        display: none; }
+      .content_bankcard-real__account_name {
+        margin-top: 12px;
+        margin-right: 8px;
+        width: 315px;
+        height: 40px;
+        padding-left: 5px;
+        border: 1px solid #e4e9ee;
+        font-size: 16px; }
+    .content_bankcard .cvv-card {
+      margin-top: 40px;
+      margin-left: 194px; }
+      .content_bankcard .cvv-card hr {
+        width: 100%;
+        height: 40px;
+        background-color: #e4e9ee;
+        border: none;
+        margin-top: 25px; }
+      .content_bankcard .cvv-card form {
+        text-align: right; }
+        .content_bankcard .cvv-card form label {
+          margin-right: 10px; }
+        .content_bankcard .cvv-card form input {
+          width: 125px !important;
+          margin-top: 3px;
+          margin-right: 10px; }
+
+.content_footer {
+  width: 100%;
+  height: 265px;
+  margin-top: 47px;
+  background-color: #373c43; }
+  .content_footer-about_site {
+    position: relative;
+    top: 10%;
+    line-height: 18px;
+    margin-left: 7%; }
+  .content_footer p {
+    width: 567px;
+    font-size: 12px;
+    font-family: Arial, sans-seirf;
+    margin-bottom: 12px;
+    color: #7f8591; }
+    .content_footer p:last-child {
+      margin-bottom: 0; }
+
+/*Отдельные стили*/
+.last_item {
+  border-bottom: none !important; }
+
+.content_info-variable {
+  font-size: 16px;
+  color: #bec6cf; }
+
+.active {
+  color: #808592;
+  background-color: #2a2d37; }
+
+/*Styles of input*/
+.content_bankcard-real__inp-style {
+  width: 64px;
+  height: 40px;
+  font-size: 24px;
+  font-family: 'Arial', sans-serif;
+  padding-left: 5px;
+  border: 1px solid #e4e9ee;
+  margin-top: 8px; }
+
+.content_bankcard__pay-button {
+  background-color: #0053b0;
+  border-radius: 20px;
+  width: 130px;
+  height: 40px;
+  border: none;
+  color: #fff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 23px;
+  margin-left: 13px; }
+  .content_bankcard__pay-button:hover {
+    cursor: pointer;
+    background-color: #014087;
+    color: #bcbcbc; }
+
+input::-webkit-input-placeholder {
+  color: #bec6cf; }
+  input::-webkit-input-placeholder::-moz-placeholder {
+    color: #bec6cf; }
+  input::-webkit-input-placeholder:-moz-placeholder {
+    color: #bec6cf; }
+  input::-webkit-input-placeholder:-ms-input-placeholder {
+    color: #bec6cf; }
+
+@media only screen and (max-width: 1440px) {
+  .app {
+    left: 15%; } }
+
+@media only screen and (max-width: 1024px) {
+  .app {
+    left: 5%; } }
+
+@media only screen and (max-width: 992px) {
+  h2 {
+    font-size: 25px; }
+  .app {
+    width: 100%;
+    margin: 0 auto;
+    position: inherit; }
+    .app .toggle-button {
+      width: 100%;
+      height: 75px;
+      position: absolute;
+      display: block; }
+      .app .toggle-button .toggle-button__checkbox {
+        transform: scale(3);
+        margin-top: 33px;
+        margin-left: 40px;
+        position: absolute;
+        opacity: 0; }
+        .app .toggle-button .toggle-button__checkbox:checked + .fa-bars::before {
+          content: "\f00d"; }
+        .app .toggle-button .toggle-button__checkbox:checked ~ .menu {
+          display: block; }
+    .app .fa-bars {
+      margin-top: 20px;
+      margin-right: 20px;
+      margin-left: 30px;
+      font-size: 35px;
+      color: #fff;
+      display: table;
+      float: left; }
+    .app .menu-burger {
+      font-size: 35px;
+      margin-top: 18px;
+      text-transform: uppercase;
+      color: #fff;
+      display: table; }
+  .menu {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    margin-top: 75px;
+    z-index: 1;
+    display: none; }
+    .menu-list a .menu__item {
+      width: 100%;
+      height: 75px;
+      text-align: center;
+      font-size: 15px;
+      display: block; }
+      .menu-list a .menu__item span {
+        margin-left: 0 !important; }
+  .content {
+    width: 100%;
+    top: 75px; }
+    .content_info {
+      margin-left: 55px; }
+    .content_bankcard {
+      margin-left: 55px; }
+    .content_footer {
+      width: 100%;
+      height: auto; }
+      .content_footer-about_site {
+        padding: 20px 19px 20px 30px;
+        margin-left: 0; }
+      .content_footer p {
+        width: 100%; } }
+
+@media only screen and (max-width: 480px) {
+  .content_info {
+    margin-left: 25px;
+    margin-top: 25px; }
+  .content_bankcard {
+    margin-left: 25px; }
+    .content_bankcard-real__account_name {
+      margin-top: -12px; }
+  .content_footer {
+    width: 100%;
+    height: auto; }
+    .content_footer-about_site {
+      padding: 20px 19px 20px 30px;
+      margin-left: 0; }
+    .content_footer p {
+      width: 100%; }
+  .content_bankcard-real__cvv-input {
+    width: 100px; }
+  .content_bankcard-real__cvv_disabled {
+    display: block; }
+  .cvv-card {
+    display: none; } }
+
+@media only screen and (max-width: 360px) {
+  .content_info {
+    margin-left: 25px;
+    margin-top: 25px; }
+  .content_bankcard {
+    margin-left: 25px; }
+    .content_bankcard-real {
+      width: 310px; }
+      .content_bankcard-real__account_name {
+        margin-top: 0;
+        width: 275px; }
+  .content_footer {
+    width: 100%;
+    height: auto; }
+    .content_footer-about_site {
+      padding: 20px 19px 20px 30px;
+      margin-left: 0; }
+    .content_footer p {
+      width: 100%; }
+  .content_bankcard-real__inp-style {
+    width: 60px; }
+  .content_bankcard-real__cvv-input {
+    width: 100px; }
+  .content_bankcard-real__cvv_disabled {
+    display: block; }
+  .cvv-card {
+    display: none; } }
+
+@media only screen and (max-width: 375px) {
+  .content_bankcard {
+    margin-left: 10px; } }
+
+@media only screen and (max-width: 320px) {
+  .content_info {
+    width: 220px; }
+  .content_bankcard {
+    margin-left: 25px; }
+    .content_bankcard-real {
+      width: 267px; }
+      .content_bankcard-real form select {
+        height: 30px; }
+      .content_bankcard-real__account_name {
+        margin-top: 0;
+        width: 230px;
+        height: 30px; }
+  .content_footer {
+    width: 100%;
+    height: auto; }
+    .content_footer-about_site {
+      padding: 20px 19px 20px 30px;
+      margin-left: 0; }
+    .content_footer p {
+      width: 100%; }
+  .content_info-variable {
+    font-size: 13px; }
+  .content_info-client {
+    font-size: 13px; }
+  .content_bankcard-real__inp-style {
+    width: 49px;
+    height: 30px; }
+  .content_bankcard-real__cvv-input {
+    width: 70px !important;
+    height: 30px; }
+  .content_bankcard-real__cvv_disabled {
+    display: block; }
+  .cvv-card {
+    display: none; } }

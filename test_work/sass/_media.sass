@@ -1,0 +1,184 @@
+@media only screen and (max-width : 1440px)
+	.app
+		left: 15%;
+
+@media only screen and (max-width : 1024px)
+	.app
+		left: 5%;
+
+@media only screen and (max-width : 992px)
+	h2
+		font-size: 25px;
+	.app
+		width: 100%
+		margin: 0 auto
+		position: inherit
+		.toggle-button
+			width: 100%;
+			height: 75px;
+			position: absolute;
+			display: block;
+			.toggle-button__checkbox
+				transform: scale(3);
+				margin-top: 33px;
+				margin-left: 40px;
+				position: absolute;
+				opacity: 0;
+				&:checked
+					+ .fa-bars::before
+						content: "\f00d"
+
+					~ .menu						
+						display: block;
+		.fa-bars
+			margin-top: 20px;
+			margin-right: 20px;
+			margin-left: 30px;	
+			font-size: 35px;
+			color: #fff
+			display: table;
+			float: left;
+		.menu-burger
+			font-size: 35px;
+			margin-top: 18px;
+			text-transform: uppercase;
+			color: #fff
+			display: table;		
+	.menu
+		width: 100%
+		height: auto
+		position: absolute
+		margin-top: 75px
+		z-index: 1
+		display: none;
+		&-list
+			a
+				.menu__item
+					width: 100%
+					height: 75px
+					text-align: center
+					font-size: 15px
+					display: block
+					span
+						margin-left: 0 !important
+
+
+	.content
+		width: 100%
+		top: 75px
+		&_info
+			margin-left: 55px;
+		&_bankcard
+			margin-left: 55px;
+		&_footer
+			width: 100%;
+			height: auto;
+			&-about_site
+				padding: 20px 19px 20px 30px
+				margin-left: 0;
+			p
+				width: 100%;
+
+
+
+@media only screen and (max-width : 480px)
+	.content
+		&_info
+			margin-left: 25px
+			margin-top: 25px
+
+		&_bankcard
+			margin-left: 25px;
+			&-real
+				&__account_name
+					margin-top: -12px
+		&_footer
+			width: 100%;
+			height: auto;
+			&-about_site
+				padding: 20px 19px 20px 30px
+				margin-left: 0;
+			p
+				width: 100%;
+
+
+	.content_bankcard-real__cvv-input
+		width: 100px;
+	.content_bankcard-real__cvv_disabled
+		display: block;
+	.cvv-card
+		display: none;
+
+
+@media only screen and (max-width : 360px)
+	.content
+		&_info
+			margin-left: 25px
+			margin-top: 25px
+
+		&_bankcard
+			margin-left: 25px;
+			&-real
+				width: 310px;
+				&__account_name
+					margin-top: 0
+					width: 275px
+		&_footer
+			width: 100%;
+			height: auto;
+			&-about_site
+				padding: 20px 19px 20px 30px
+				margin-left: 0;
+			p
+				width: 100%;
+
+	.content_bankcard-real__inp-style
+		width: 60px;
+	.content_bankcard-real__cvv-input
+		width: 100px;
+	.content_bankcard-real__cvv_disabled
+		display: block;
+	.cvv-card
+		display: none;
+
+@media only screen and (max-width : 375px)
+	.content_bankcard
+		margin-left: 10px;
+
+@media only screen and (max-width : 320px)
+	.content
+		&_info
+			width: 220px;
+		&_bankcard
+			margin-left: 25px;
+			&-real
+				width: 267px;
+				form
+					select
+						height: 30px;
+				&__account_name
+					margin-top: 0
+					width: 230px
+					height: 30px;
+		&_footer
+			width: 100%;
+			height: auto;
+			&-about_site
+				padding: 20px 19px 20px 30px
+				margin-left: 0;
+			p
+				width: 100%;
+	.content_info-variable
+  	font-size: 13px
+	.content_info-client
+		font-size: 13px
+	.content_bankcard-real__inp-style
+		width: 49px;
+		height: 30px;
+	.content_bankcard-real__cvv-input
+		width: 70px !important;
+		height: 30px;
+	.content_bankcard-real__cvv_disabled
+		display: block;
+	.cvv-card
+		display: none;
