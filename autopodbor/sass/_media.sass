@@ -7,6 +7,13 @@
 	.offsetMD1
 		margin-left: 8.333333%;
 @media only screen and (max-width : 1200px)
+	/** Menu and logo **/
+	.logo
+		margin-left: 50px !important;
+	.menu
+		margin-right: 50px !important;
+		ul
+			font-size: 16px !important;
 	/** Отзывы **/
 	div.bx-wrapper
 		height: auto;
@@ -16,21 +23,24 @@
 
 	.main-content
 		margin-left: -25px;
-
+/* Custom device@media only screen and (max-width : 1062px)*/
 
 /* Medium Devices, Desktops */
 @media only screen and (max-width : 992px)
+	.menu-devices
+		display: block;
+	.menu-link
+		display: block;
+	.menu
+		display: none;
 	.float
 		float: left !important;
-	nav.navbar
-		padding: 0;
-	.nav-link
-		width: 100%;
 	.fixed
 		width: 100%;
 	.logo
 		width: 100%;
 		padding: 0;
+		z-index: 3;
 	.logo img
 		text-align: center;
 	.main-text
