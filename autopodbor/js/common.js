@@ -10,6 +10,7 @@ $(function() {
 	});
 
 	$('.menu-devices a').click(function() {
+		$('.menu-link').toggleClass('menu-link_active');
 		$('.menu-devices').toggleClass('menu-devices_active');
 	});
 
