@@ -1,0 +1,376 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px)
+	.offsetMD1
+		margin-left: 8.333333%;
+@media only screen and (max-width : 1200px)
+	/** Отзывы **/
+	div.bx-wrapper
+		height: auto;
+	.sliders
+		img
+			height: auto;
+
+	.main-content
+		margin-left: -25px;
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	.float
+		float: left !important;
+	nav.navbar
+		padding: 0;
+	.nav-link
+		width: 100%;
+	.fixed
+		width: 100%;
+	.logo
+		width: 100%;
+		padding: 0;
+	.logo img
+		text-align: center;
+	.main-text
+		width: 400px;
+		margin-left: -30%;
+	.head-form
+		margin-left: -25px;
+	.price-section
+		margin-left: -7.7%;
+		.price-item
+			width: 250px;
+			height: 400px;
+			margin-right: -10px;
+			h3
+				margin-bottom: 20px;
+			ul
+				width: 190px !important;
+				color: #fff;
+				line-height: 14px;
+				font-size: 14px;
+				padding-left: 5;
+				li
+					margin-bottom: 10px;
+	.price-item-end
+		span
+			font-size: 24px;
+
+	/** Что проверяем? **/
+	.check-wrapper
+		h2
+			margin-bottom: 50px;
+	.check-lists
+		padding: 0;
+		.check-list
+			margin-bottom: 20px !important;
+			img
+				width: 30px;
+				margin-top: -3px;
+
+	/** Цифры **/
+	.numbers
+		margin-top: 30px;
+	.circle-gradient
+		width: 90px;
+		height: 90px;
+		border-radius: 50px;
+		margin-right: -5px;
+		span
+			font-weight: 700;
+			font-size: 18px;
+	.numbers-text
+		text-align: center;
+		p
+			font-size: 15px;
+			line-height: 15px;
+	.align-year
+		top: 90px;
+		left: 0;
+	.align-auto-selection
+		top: 30px;
+		left: 0;
+	.align-happy-client
+		top: 70px;
+		left: 40px;
+
+	/** Отзывы **/
+	div.bx-wrapper
+		height: auto;
+		text-align: center;
+	.flex-slide
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+	.sliders
+		img
+			margin-left: 0;
+		.slider
+			.main-content
+				margin-left: 0;
+				text-align: left;
+	
+	/** Contact **/
+	.contact-us
+		margin-top: 60px;
+		h2
+			margin-bottom: 30px;
+		p
+			width: 100%;
+			margin-bottom: 30px;
+	.contact-lists
+		padding: 0;
+		font-size: 16px;
+	.contact-form
+		margin-top: 0px;
+
+	.footer
+		margin-top: 60px;
+		
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	.main-text
+		width: 400px;
+		margin-left: 0;
+	.head-form
+		display: none;
+	.price-section
+		margin-top: 50px;
+		.flex-box
+			display: block;
+			margin: 0 auto;
+		.price-item
+			margin-bottom: 30px;
+			-ms-align-items: center;
+			align-items: center;
+			width: 100%;
+			&:nth-child(3)
+				margin-bottom: 0;
+		.main-price
+			height: 400px;
+			background: #0d0114;
+	/*.price-section
+		margin-left: -7.7%;
+		.price-item
+			width: 250px;
+			height: auto;
+			margin-right: -10px;
+			h3
+				margin-bottom: 20px;
+			ul
+				width: 190px;
+				color: #fff;
+				line-height: 14px;
+				font-size: 14px;
+				padding-left: 5;
+				li
+					margin-bottom: 10px;*/
+	.price-item-end
+		span
+			font-size: 24px;
+	.check-wrapper
+		h2
+			margin-bottom: 50px;
+	.check-lists
+		padding: 0;
+		.check-list
+			margin-bottom: 20px !important;
+			img
+				width: 30px;
+				margin-top: -3px;
+	/** Цифры **/
+	.numbers
+		margin-top: 30px;
+	.circle-gradient
+		width: 80px;
+		height: 80px;
+		border-radius: 100px;
+		margin-right: -5px;
+		span
+			font-weight: 700;
+			font-size: 18px;
+	.numbers-text
+		text-align: center;
+		p
+			font-size: 15px;
+			line-height: 15px;
+	.align-year
+		top: 0;
+		left: 0;
+	.align-auto-selection
+		top: 40px;
+		left: 0;
+	.align-happy-client
+		top: 25px;
+		left: 5px;
+
+	/** Отзывы **/
+	div.bx-wrapper
+		height: auto;
+		text-align: center;
+	.flex-slide
+		display: block;
+	.sliders
+		img
+			width: 100%;
+			height: auto;
+			margin-left: 0;
+			margin-bottom: 20px;
+	.main-content
+		margin-left: 0;
+
+	/** Contact **/
+	.contact-us
+		margin-top: 60px;
+		h2
+			margin-bottom: 30px;
+		p
+			width: 100%;
+			margin-bottom: 30px;
+	.contact-lists
+		padding: 0;
+		.contact-list
+			&:nth-child(4)
+	.contact-form
+		margin-top: 30px;
+
+	.footer
+		margin-top: 60px;
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	.logo
+		width: 100%;
+		margin: 0 auto
+	.logo img
+		text-align: center;
+	.main-text
+		text-align: center;
+		width: 100%;
+	.head-form
+		display: none;
+	.price-section
+		margin-top: 50px;
+		margin-left: 0;
+		.price-item
+			width: 100%;
+			margin-bottom: 10px;
+		.main-price
+			height: 400px;
+			background: #0d0114;
+	.flex-box
+		flex-direction: column;
+		justify-content: center;
+		margin: 0 auto;
+
+	.check-wrapper
+		h2
+			margin-bottom: 50px;
+	.check-lists
+		padding: 0;
+		.check-list
+			margin-bottom: 20px !important;
+			img
+				width: 30px;
+				margin-top: -3px;
+	.advantage
+		margin: 0 auto;
+
+	/** Цифры **/
+	.numbers
+		margin-top: 30px;
+	.circle-gradient
+		width: 50px;
+		height: 50px;
+		span
+			font-weight: 700;
+			font-size: 18px;
+	.numbers-text
+		width: 100%;
+		text-align: center;
+		p
+			font-size: 15px;
+			line-height: 15px;
+	.align-year
+		top: 0;
+		left: 0;
+	.align-auto-selection
+		top: 0;
+		left: 0;
+	.align-happy-client
+		top: 0;
+		left: 0;
+
+	/** Отзывы **/
+	div.bx-wrapper
+		height: auto !important;
+	.flex-slide
+		display: block;
+	.sliders
+		img
+			height: auto;
+			margin-left: 0;
+	.main-content
+		margin-left: 0;
+	/** Contact **/
+	.contact-us
+		margin-top: 60px;
+		h2
+			margin-bottom: 30px;
+		p
+			width: 100%;
+			margin-bottom: 30px;
+	.contact-lists
+		padding: 0;
+		.contact-list
+			&:nth-child(4)
+	.contact-form
+		margin-top: 30px;
+	.footer
+		margin-top: 60px;
+
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
