@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>OOP Lesson 1</title>
+    <link href="style.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  </head>
+  <body>
+    <div class="root">
+      <div class="block_user_wrap" id="main">
+        <h1>Введите ваши данные</h1>
+        <div class="user_details_block">
+          <div class="form" id="form">
+            <label for="name">Ваше имя:</label>
+            <input class="input" id="name" type="text" name="name" />
+            <label for="age">Возраст:</label>
+            <input class="input" id="age" type="number" name="age" />
+            <label for="phone">Телефон:</label>
+            <input class="input" id="phone" type="tel" name="phone" />
+            <label for="address">Адрес:</label>
+            <input class="input" id="address" type="text" name="address" />
+            <button onclick="getDetails()" class="btn">Отправить</button>
+          </div>
+        </div>
+      </div>
+      <div class="modal" id="modal">
+        <h1>Вот ваши данные</h1>
+        <div class="ur_info">
+          <span class="span_label">Ваше имя: </span>
+          <span id="ready_obj_name">Gallileo</span>
+        </div>
+        <div class="ur_info">
+          <span class="span_label">Ваш возраст: </span>
+          <span id="ready_obj_age">25</span>
+        </div>
+        <div class="ur_info">
+          <span class="span_label">Ваш номер: </span>
+          <span id="ready_obj_phone">+7968xxxxxxxxxx</span>
+        </div>
+        <div class="ur_info">
+          <span class="span_label">Ваш адрес: </span>
+          <span id="ready_obj_address">Prospect avenue</span>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+  </body>
+</html>
