@@ -1,0 +1,836 @@
+@import "vars";
+@import "fonts";
+@import "libs";
+
+::placeholder {
+  color: #666;
+}
+
+::selection {
+  background-color: $accent;
+  color: #fff;
+}
+
+body {
+  font-size: 16px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1.65;
+  font-family: $default-font;
+  overflow-x: hidden;
+  color: $text;
+  input,
+  textarea {
+    border: #666 1px solid;
+    outline: none;
+    &:focus:required:invalid {
+      border-color: red;
+    }
+    &:required:valid {
+      border-color: green;
+    }
+  }
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  &.img-width {
+    width: 100%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+a,
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+}
+a {
+  color: $links;
+}
+a:hover {
+  text-decoration: none;
+  color: $links;
+}
+p {
+  color: $text;
+  font-size: 20px;
+}
+h1 {
+  font-family: "Varela Round", sans-serif;
+}
+h2 {
+  font-family: "Varela Round", sans-serif;
+  font-size: 42px;
+  color: $links;
+}
+h3 {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+  font-size: 26px;
+}
+.btn_accent {
+  background-color: $accent;
+  border-radius: 15px;
+}
+.btn_addition {
+  background-color: #6fc754;
+  border-radius: 15px;
+}
+/*************End of the important styles ******************/
+
+
+/*************************************************************
+*********************Header***********************************
+*************************************************************/
+.header {
+  width: 100%;
+  height: 1000px;
+  background-size: cover;
+  background-position: 0;
+  position: relative;
+  top: 0;
+  z-index: 999;
+}
+.header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255,255,255,0.4);
+  position: absolute;
+  z-index: -1;
+}
+.container {
+  display: grid;
+  grid-template-rows: 10% 35% 75%;
+}
+.menu_btn {
+  display: none;
+}
+.menu {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-items: center;
+}
+.menu__left_menu,
+.menu__right_menu {
+  display: grid;
+  justify-items: center;
+  grid-column-gap: 45px;
+  align-items: center;
+  width: 100%;
+}
+.menu__left_menu {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.menu__logo {
+  background-image: url(../img/logo.png);
+  background-repeat: no-repeat;
+  background-position: 0;
+  width: 155px;
+  height: auto;
+}
+.menu__right_menu {
+  grid-template-columns: 1fr 1fr 40%;
+}
+.menu_right_menu_item:last-child {
+  padding: 5px 20px 5px 40px;
+  color: #fff;
+  background-image: url(../img/applelogo.png);
+  background-repeat: no-repeat;
+  background-size: 17px;
+  background-position: 15px 7px;
+}
+.menu_right_menu_item:hover,
+.menu_left_menu_item:hover {
+  opacity: 0.4;
+}
+
+.mainTitle {
+  margin-top: 60px;
+  text-align: center;
+  h1 {
+    font-size: 62px;
+    color: $links;
+    margin-bottom: 80px;
+  }
+  p {
+    align-self: center;
+    text-align: center;
+    width: 700px;
+    margin: 0 auto;
+  }
+}
+
+.mainTitle__videobtn {
+  margin-top: 80px;
+}
+.video_btn {
+  padding: 10px 30px 10px 50px;
+  background-image: url(../img/playicon.png);
+  background-repeat: no-repeat;
+  background-size: 10px;
+  background-position: 22px 14px;
+  border: 1px solid #d0d0d0;
+  border-radius: 15px;
+  font-size: 16px;
+}
+.video_btn:hover {
+  opacity: 1;
+  color: $links;
+}
+.header_phone {
+  background-repeat: no-repeat;
+  width: 369px;
+  height: 753px;
+  align-self: center;
+  justify-self: center;
+  z-index: -1;
+}
+
+.features {
+  background-color: #fff;
+  width: 100%;
+  height: 600px;
+  z-index: 999;
+  color: #000;
+  display: block;
+  position: relative;
+}
+
+.features_grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: left;
+  align-items: center;
+  grid-gap: 25px;
+  height: 600px;
+}
+.first_feature__icon,
+.second_feature__icon {
+  background-repeat: no-repeat;
+  width: 42px;
+  height: 52px;
+  margin-bottom: 10px;
+}
+.feature__first,
+.feature__second {
+  height: 100%;
+  margin-top: 50%;
+  align-self: center;
+
+  h3 {
+    margin-bottom: 30px;
+  }
+  p {
+    font-size: 18px;
+  }
+}
+
+.phone_feature {
+  background-repeat: no-repeat;
+  background-position: -100px center;
+  width: 100%;
+  height: 900px;
+  display: block;
+  position: relative;
+  .container {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+}
+.phone_feature_right_info {
+  position: absolute;
+  top: 20%;
+  right: 0;
+  height: 100%;
+  h2 {
+    margin-bottom: 70px;
+    width: 235px;
+  }
+  p {
+    width: 470px;
+  }
+  p:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+.btns_block {
+  margin-top: 80px;
+  .phone_feature_right_info__btn_accent {
+    background-image: url(../img/small_arrow.png);
+    background-position: 160px 19px;
+    background-repeat: no-repeat;
+    padding: 13px 80px 13px 23px;
+    color: #fff;
+  }
+  .phone_feature_right_info__btn_addition {
+    padding: 13px 30px;
+    border: 1px solid #e9e9ea;
+    background-color: rgba(255, 255, 255, 0.4);
+    transition: all 0.5s ease-in-out 1ms;
+  }
+  .phone_feature_right_info__btn_addition:hover {
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+}
+
+.map_feature {
+  background-repeat: no-repeat;
+  background-position: 500px center;
+  width: 100%;
+  height: 900px;
+  display: block;
+  position: relative;
+  .container {
+    display: block;
+    position: relative;
+    height: 100%;
+  }
+}
+.map_feature_left_info {
+  position: absolute;
+  top: 20%;
+  left: 0;
+  height: 100%;
+  h2 {
+    margin-bottom: 70px;
+    width: 235px;
+  }
+  p {
+    width: 470px;
+  }
+  p:first-child {
+    margin-bottom: 30px;
+  }
+}
+
+.partners {
+  margin-top: 70px;
+  .partners_headtext {
+    font-family: "Lato", sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    color: #26272d;
+    text-transform: uppercase;
+  }
+  .partners_logo {
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: 25% 30%;
+    grid-template-rows: 25% 30%;
+    grid-gap: 35px;
+  }
+}
+
+.phone_screens {
+  height: 1750px;
+  width: 100%;
+  background-color: #f5f5f8;
+  text-align: center;
+  display: grid;
+  grid-template-rows: 30% 1fr 20%;
+  justify-content: center;
+  .phone_screens__header_text {
+    text-align: center;
+    margin: 0 auto;
+    padding-top: 70px;
+    h2 {
+      margin-bottom: 20px;
+    }
+    .header_text__line {
+      width: 70px;
+      height: 3px;
+      background-color: $accent;
+      border: 1px solid $accent;
+      border-radius: 3px;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.header_text__small {
+  font-family: "Lato", sans-serif;
+  color: #8c8f94;
+  text-transform: uppercase;
+}
+
+/***************************************************
+******************* Slider *************************
+***************************************************/
+.phone_screens__slider {
+  width: 370px;
+  margin-top: 20px;
+  background-image: url(../img/phone-carcas.png);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  justify-self: center;
+  // .viewport {
+  //   width: 260px;
+  //   display: table;
+  //   top: 88px;
+  //   left: 25px;
+  //   position: relative;
+  //   overflow: hidden;
+  //   -webkit-user-select: none;
+  //   -moz-user-select: none;
+  //   -ms-user-select: none;
+  //   -o-user-select: none;
+  //   user-select: none;
+  //   #slidewrapper {
+  //     padding: 0;
+  //     position: relative;
+  //     width: calc(100% * 5);
+  //     top: 0;
+  //     left: 0;
+  //     margin: 0;
+  //     padding: 0;
+  //     -webkit-transition: 1s;
+  //     -o-transition: 1s;
+  //     transition: 1s;
+  //     -webkit-transition-timing-function: ease-in-out;
+  //     -o-transition-timing-function: ease-in-out;
+  //     transition-timing-function: ease-in-out;
+  //     //display: grid;
+  //     //grid-template-columns: repeat(5, 1fr)
+  //   }
+  // }
+}
+.slidewrap {
+  top: 87px;
+  left: 31px;
+  width: 311px !important;
+}
+
+// #slidewrapper .slidewrap,
+// #slidewrapper .slide {
+//   margin: 0;
+//   padding: 0;
+// }
+
+// #slidewrapper .slide {
+//   width: calc(100% / 5);
+//   display: inline;
+//   float: left;
+// }
+
+// .slide-img:first-child {
+//   float: left;
+//   display: block;
+// }
+
+// .nav_btns {
+//   position: absolute;
+//   bottom: 10px;
+//   width: 100%;
+//   text-align: center;
+// }
+// .slide_nav_btn {
+//   display: inline-block;
+//   width: 10px;
+//   height: 10px;
+//   border: 1px solid rgb(122, 122, 122);
+//   border-radius: 5px;
+//   background-color: rgba(255, 255, 255, 0);
+//   cursor: pointer;
+// }
+// .slide_active_btn {
+//   background-color: $accent;
+//   border: none;
+// }
+
+/******************************************
+****************Special offer *************
+******************************************/
+.special_offer {
+  align-self: center;
+  h2 {
+    margin-bottom: 20px;
+  }
+  form {
+    margin-bottom: 20px;
+    border: 1px solid #bbb;
+    border-radius: 25px;
+    padding: 5px;
+    input[type="text"] {
+      border: none;
+      width: 382px;
+      font-family: "Lato", sans-serif;
+      background: none;
+      color: #000;
+      padding-left: 15px;
+    }
+    button {
+      border: none;
+      background-color: $green;
+      border-radius: 25px;
+      padding: 5px 50px 5px 25px;
+      color: #fff;
+      font-size: 16px;
+      background-image: url(../img/small_arrow.png);
+      background-position: 122px 13px;
+      background-repeat: no-repeat;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.appstore {
+  margin-top: 30px;
+}
+.appstore_info {
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  text-transform: uppercase;
+  display: block;
+}
+.appstore_link {
+  display: block;
+  width: 195px;
+  font-family: "Lato", sans-serif;
+  font-size: 12px;
+  color: #fff;
+  text-align: left;
+  line-height: 20px;
+  padding: 5px 15px 5px 63px;
+  border-radius: 50px;
+  background-color: #000;
+  background-image: url("../img/applelogo.png");
+  background-repeat: no-repeat;
+  background-position: 25px 12px;
+  margin: 30px auto 0;
+  &:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+  b {
+    font-weight: normal;
+    font-size: 23px;
+  }
+}
+/************************************************/
+/*************** Feedbacks **********************/
+/*************************************************/
+.feedbacks {
+  margin: 130px 0 130px;
+  .feedback_viewport {
+    width: 90%;
+    margin: 0 auto;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    > .slick-prev {
+      background-image: url(../img/prev.png);
+      background-repeat: no-repeat;
+      margin-left: 25px;
+      z-index: 999;
+    }
+    > .slick-next {
+      background-image: url(../img//next.png);
+      background-repeat: no-repeat;
+      z-index: 999;
+    }
+    > .slick-prev, > .slick-next {
+      width: 60px;
+      height: 60px;
+    }
+    > .slick-prev:before, > .slick-next:before {
+      content: '';
+    }
+  }
+}
+.feedback_active_img {
+  transform: scale(1.2);
+  display: block;
+}
+.feedback_slide {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.feedbackslide_btns {
+  position: relative;
+  top: -100px;
+}
+.prev_btn,
+.next_btn {
+  width: 23px;
+  height: 42px;
+  position: absolute;
+  top: 20px;
+  cursor: pointer;
+}
+.prev_btn {
+  background-image: url("../img/prev.png");
+  background-repeat: no-repeat;
+  left: 20px;
+}
+.next_btn {
+  background-image: url("../img/next.png");
+  background-repeat: no-repeat;
+  right: 20px;
+}
+// Feedback contents
+.feedback_content1 {
+  margin-top: 70px;
+  text-align: center;
+  h2 {
+    font-family: 'Lato', sans-serif;
+    font-weight: lighter;
+    margin-top: 30px;
+  }
+  p {
+    width: 555px;
+    margin: 50px auto;
+  }
+  .feedback_stars {
+    color: #f2bc3b;
+    margin-bottom: 70px;
+  }
+}
+
+/**************************************************
+******************Perfect plans********************
+**************************************************/
+.perfect_plans {
+  width: 100%;
+  height: 890px;
+  background-color: #f4f4f5;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  .perfect_plans_wrapper {
+    width: 1140px;
+    margin: 0 auto;
+  }
+}
+.perfect_plans_grid {
+  display: grid;
+  grid-template-columns: 30% 70%;
+  align-items: center;
+  grid-gap: 120px;
+}
+.perfect_plans_text {
+  width: 360px;
+}
+.perfect_plans_text_wrapper {
+  h2 {
+    margin-top: 35px;
+    margin-bottom: 67px;
+  }
+  span.small_head {
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 12px;
+    text-transform: uppercase;
+    color: $links;
+    margin-bottom: 18px;
+  }
+}
+
+.toggle_user {
+  width: 263px;
+  display: grid;
+  grid-template-columns: 49% 50%;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  position: relative;
+  margin-bottom: 75px;
+  cursor: pointer;
+  .individual, .company {
+    margin: 2px;
+    width: 100%;
+    text-align: center;
+    padding: 5px 10px;
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+  }
+  .toggle_user_active {
+    color: $links;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 5px 0 25px rgba(0,0,0,0.1);
+    transition: background-color 0.4s ease-in-out;
+  }
+}
+
+.letstalk, .letstalk > a {
+  margin-top: 45px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
+}
+.letstalk > a {
+  color: $accent;
+  text-decoration: underline;
+  font-weight: bold;
+}
+/**************Perfect plan ways ***************/
+.perfect_plans_ways_grid {
+  display: grid;
+  grid-template-columns: 42% 42%;
+  align-items: center;
+}
+.perfect_plan_active {
+  height: 650px !important;
+  background-color: #fff !important;
+  box-shadow: rgba(0, 0, 0, 0.1) 8px 9px 30px;
+  z-index: 1;
+}
+.perfect_plan_starter, .perfect_plan_premium {
+  width: 340px;
+  height: 620px;
+  background-color: #ebebed;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  p {
+    width: 170px;
+    text-align: center;
+  }
+}
+.perfect_plan_premium {
+  align-self: center;
+}
+.plan_name {
+  font-family: 'Lato', sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  color: $links;
+  margin-top: 30px;
+  margin-bottom: 35px;
+}
+.plan_price {
+  border: 1px solid rgba(0,0,0,0.2);
+  border-radius: 10px;
+  padding: 2px 15px;
+  margin-bottom: 55px;
+}
+.plan_lists {
+  height: 100px;
+  list-style-image: url('../img/list-style.png');
+  font-family: 'Lato', sans-serif;
+  color: #26292c;
+  margin-top: 45px;
+  margin-bottom: 90px;
+}
+.plan_advantages {
+  margin-bottom: 25px;
+}
+.plan_advantages:last-child {
+  margin-bottom: 0;
+}
+.plan_buy_now {
+  padding: 10px 60px;
+  border: 1px solid $accent;
+  border-radius: 15px;
+  color: $accent;
+  margin-bottom: 50px;
+}
+.plan_buy_now:hover {
+  color: $accent;
+}
+.plan_buy_now_active {
+  background-color: $accent;
+  color: #fff;
+}
+.plan_buy_now_active:hover {
+  color: rgba(255,255,255,.7);
+}
+
+/**************************************************
+************** Special offer under plans **********
+**************************************************/
+.special_offer_wrapper {
+  display: grid;
+  justify-content: center;
+  height: 350px;
+  text-align: center;
+}
+
+/**************************************************
+******************** Footer ***********************
+**************************************************/
+.footer {
+  width: 100%;
+  margin-bottom: 90px;
+}
+.footer_wrapper {
+  width: 1070px;
+  padding-top: 80px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  border-top: 1px solid rgba(0,0,0,0.1);
+}
+.footer_left {
+  width: 250px;
+  img {
+    margin-bottom: 35px;
+  }
+  p.footer_paragraph {
+    font-size: 12px;
+  }
+  > .appstore > a {
+    border-radius: 10px;
+    margin: 0;
+  }
+}
+.socials {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(5, 10%);
+  text-align: center;
+}
+
+.footer_map {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 60px;
+  justify-content: start;
+}
+.footer_map_learn_more,
+.footer_map_about_us,
+.footer_map_support {
+  display: grid;
+  grid-template-rows: repeat(5, 10%);
+  grid-gap: 20px;
+  > a {
+    color: $text;
+    font-size: 16px;
+  }
+  > a:hover {
+    text-decoration: underline;
+  }
+}
+
+.footer_header_text {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+  color: $links;
+}
+
+
+
+
+@import "media"; // Always at the end
