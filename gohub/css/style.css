@@ -1,0 +1,93 @@
+/*************** Main styles ******************/
+* {
+  margin: 0;
+  padding: 0;
+}
+.container {
+  width: 1120px;
+  margin: 0 auto;
+}
+h1 {
+  font-size: 48px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: #32325d;
+}
+p.section_descr {
+  font-size: 23px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #525f7f;
+}
+p.element_descr {
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 300;
+  color: #525f7f;
+}
+
+a.btn {
+  font-size: 15px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 10px 20px;
+  text-align: center;
+  background-color: #845cff;
+  transition: all 0.3s ease-in;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+a.btn:hover {
+  background-color: #9f80fd;
+}
+
+/*********** End main styles **************/
+
+
+
+
+/***************** Header section ********************/
+
+.header {
+  width: 100%;
+  background: url("../img/hero.svg") no-repeat;
+  background-position: 100% center;
+  background-size: initial;
+  height: 100vh;
+}
+.nav {
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+  position: relative;
+  top: 40px;
+}
+.menu {
+  list-style-type: none;
+  justify-self: right;
+}
+.menu__item {
+  display: inline;
+  margin-right: 50px;
+}
+.menu__item:last-child {
+  margin-right: 0;
+}
+.menu__item_link {
+  font-size: 19px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 700;
+  color: #645293;
+  text-decoration: none;
+}
+.menu__item_link:hover {
+  text-decoration: underline;
+}
+.header__text {
+  display: table;
+  vertical-align: middle;
+  width: 500px;
+  height: 500px;
+}
