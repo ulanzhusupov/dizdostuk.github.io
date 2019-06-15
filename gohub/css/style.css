@@ -7,11 +7,21 @@
   width: 1120px;
   margin: 0 auto;
 }
+h2, h3 {
+  font-weight: 300;
+  font-family: 'Ubuntu', sans-serif;
+  color: #32325d;
+}
 h1 {
   font-size: 48px;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 700;
-  color: #32325d;
+}
+h2 {
+  font-size: 48px;
+}
+h3 {
+  font-size: 30px;
 }
 p.section_descr {
   font-size: 23px;
@@ -42,6 +52,16 @@ a.btn {
 a.btn:hover {
   background-color: #9f80fd;
 }
+a.links {
+  font-size: 19px;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 400;
+  color: #32325d;
+  text-decoration: none;
+}
+a.links:hover {
+  text-decoration: underline;
+}
 
 /*********** End main styles **************/
 
@@ -52,10 +72,10 @@ a.btn:hover {
 
 .header {
   width: 100%;
+  height: 995px;
   background: url("../img/hero.svg") no-repeat;
-  background-position: 100% center;
+  background-position: right top;
   background-size: initial;
-  height: 100vh;
 }
 .nav {
   display: grid;
@@ -86,8 +106,32 @@ a.btn:hover {
   text-decoration: underline;
 }
 .header__text {
-  display: table;
-  vertical-align: middle;
+  margin-top: 12%;
   width: 500px;
   height: 500px;
+}
+.header__text h1 {
+  margin-bottom: 50px;
+}
+.header__text .section_descr {
+  margin-bottom: 38px;
+}
+.header__text_links .btn {
+  margin-right: 36px;
+}
+/************************************************/
+
+/*************************************************
+*  About us section
+**************************************************/
+.about_us {
+  width: 100%;
+  height: 1060px;
+}
+.about_us-gridable {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-column-gap: 25px;
+  grid-row-gap: 50px;
 }
