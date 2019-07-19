@@ -9,19 +9,24 @@
   <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <section class="header">
+  <section class="hero">
     <div class="container">
-      <nav class="nav">
+      <div class="navbar">
         <div class="logo"><a href="#" class="logo__link"><img src="./img/logo.png" alt="Logo"></a></div>
-        <ul class="menu">
-          <li class="menu__item"><a href="#" class="menu__item_link">Product</a></li>
-          <li class="menu__item"><a href="#" class="menu__item_link">Costumers</a></li>
-          <li class="menu__item"><a href="#" class="menu__item_link">Pricing</a></li>
-          <li class="menu__item"><a href="#" class="menu__item_link">Docs</a></li>
-          <li class="menu__item"><a href="#" class="btn">Sign in</a></li>
-        </ul>
-      </nav>
-
+        <nav class="nav">
+          
+            <input type="checkbox" id="nav-check" class="nav-check">
+            <label for="nav-check" class="menu_label"><div class="nav__menu_btn"></div></label>
+          <ul class="menu">
+            <li class="menu__item"><a href="#" class="menu__item_link">Product</a></li>
+            <li class="menu__item"><a href="#" class="menu__item_link">Costumers</a></li>
+            <li class="menu__item"><a href="#" class="menu__item_link">Pricing</a></li>
+            <li class="menu__item"><a href="#" class="menu__item_link">Docs</a></li>
+            <li class="menu__item"><a href="#" class="btn">Sign in</a></li>
+          </ul>
+        </nav>
+      </div>
+    
       <div class="header__text">
         <h1>Balance agility with 
             stability!</h1>
@@ -40,7 +45,7 @@
   <section class="about_us">
     <div class="container">
       <div class="about_us-gridable">
-        <div class="header__text">
+        <div class="header__text_features">
           <h2>Improve the stability of 
             your application</h2>
           <p class="section_descr">
@@ -50,8 +55,10 @@
           </p>
         </div>
         <div class="about_us__features">
-          <div class="about_us__features__logo"></div>
-          <h2 class="about_us__features__header_text">Be visible to like</h2>
+          <div class="about_us__features__logo">
+            <img src="./img/icon1.svg" alt="Icon1">
+          </div>
+          <h3 class="about_us__features__header_text">Be visible to like</h3>
           <p class="about_us__features__header_descr">
             Strengthen your digital visibility in a universe where everyone is
             interested in travelling and renting gears.
@@ -59,16 +66,20 @@
           </p>
         </div>
         <div class="about_us__features">
-          <div class="about_us__features__logo"></div>
-          <h2 class="about_us__features__header_text">Monitor online</h2>
+          <div class="about_us__features__logo">
+            <img src="./img/icon2.svg" alt="Icon2">
+          </div>
+          <h3 class="about_us__features__header_text">Monitor online</h3>
           <p class="about_us__features__header_descr">
             The platform has multiple functionalities and key features.
             With our intelligent system, you can approve bookings and monitor everything in your business online.
           </p>
         </div>
         <div class="about_us__features">
-          <div class="about_us__features__logo"></div>
-          <h2 class="about_us__features__header_text">More income</h2>
+          <div class="about_us__features__logo">
+            <img src="./img/icon3.svg" alt="Icon3">
+          </div>
+          <h3 class="about_us__features__header_text">More income</h3>
           <p class="about_us__features__header_descr">
             Being on a digital platform is another sales channel added to strengthen your business.
             More work, in your hands. With our insights tools, we analyze your gear's performance in any season
@@ -76,7 +87,280 @@
         </div>
       </div>
     </div>
-
   </section>
+
+  <section class="services" style="background-image: url('./img/services-bg.png')">
+    <div class="container">
+      <div class="header__text_section">
+        <h2>Proof makes increasing conversions simple</h2>
+        <p class="section_descr">
+            Getting a conversion boost didn’t used to be this easy. Luckily, you found Proof.
+            Now you have the tools to let your customer do the selling for you.
+        </p>
+      </div>
+
+      <div class="services__items">
+        <div class="services__item">
+          <img src="./img/services01.png" alt="Icon">
+          <h4 class="services__item__headerText">Higher Conversions</h4>
+          <p class="services__item__descr">Convert more website visitors into signups and purchases.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services02.png" alt="Icon">
+          <h4 class="services__item__headerText">Save on Acquisition</h4>
+          <p class="services__item__descr">Your advertising spend will go further than ever before.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services03.png" alt="Icon">
+          <h4 class="services__item__headerText">Increase Visitor Trust</h4>
+          <p class="services__item__descr">People trust companies they see other people buy from as well.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services04.png" alt="Icon">
+          <h4 class="services__item__headerText">Social Influence</h4>
+          <p class="services__item__descr">Seeing other visitors taking action creates fear of missing out.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services05.png" alt="Icon">
+          <h4 class="services__item__headerText">Activity Notifications</h4>
+          <p class="services__item__descr">Display recent sales and opt-ins on your pages and drive visitors to convert.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services06.png" alt="Icon">
+          <h4 class="services__item__headerText">Customer Journeys</h4>
+          <p class="services__item__descr">Your advertising spend will go further than ever before.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services07.png" alt="Icon">
+          <h4 class="services__item__headerText">Custom Timing</h4>
+          <p class="services__item__descr">Control when, how long and how fast notifications display on your site.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services08.png" alt="Icon">
+          <h4 class="services__item__headerText">Live Visitor Count</h4>
+          <p class="services__item__descr">Show how many visitors are browsing your site - "28 people are viewing this page"</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services09.png" alt="Icon">
+          <h4 class="services__item__headerText">Visitor Identification</h4>
+          <p class="services__item__descr">We'll show you detailed profiles of every visitor who enters their email.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services10.png" alt="Icon">
+          <h4 class="services__item__headerText">Custom Rules</h4>
+          <p class="services__item__descr">Granular control over how and when notifications display on your pages.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services11.png" alt="Icon">
+          <h4 class="services__item__headerText">Mobile Optimized</h4>
+          <p class="services__item__descr">With mobile traffic approaching 70%, Proof looks amazing on mobile.</p>
+        </div>
+        <div class="services__item">
+          <img src="./img/services12.png" alt="Icon">
+          <h4 class="services__item__headerText">Language Translation</h4>
+          <p class="services__item__descr">Translate Recent Activity notification into any language you want. We're global.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="whatwedo1">
+    <div class="container">
+      <div class="whatwedo--gridable">
+
+        <div class="whatwedo1__safety--left">
+          <div class="header__text_section">
+            <h2>Your safety is always 
+              a top priority</h2>
+              <p class="section_descr">
+                We’re committed to helping drivers and riders get where they want to go with confidence.
+              </p>
+          </div>
+          
+          <div class="whatwedo__items">
+            <div class="header__text_subsection">
+              <h3>Drive</h3>
+              <p class="whatwedo__descr">Drive when you want. Find opportunities around you.</p>
+            </div>
+            <div class="header__text_subsection">
+              <h3>Ride</h3>
+              <p class="whatwedo__descr">Tap your phone. Get where you're headed.</p>
+            </div>
+          </div>
+          
+          <div class="header__text_links">
+            <a href="#" class="btn">Get started</a>
+            <a href="#" class="links">Questions? Talk to our team →</a>
+          </div>
+        </div>
+      
+        <div class="whatwedo1__safety--right">
+          <div class="whatwedo1__safety--bg"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="whatwedo2">
+    <div class="container">
+      <div class="whatwedo--gridable">
+        <div class="whatwedo2__openingDoors--left">
+          <div class="whatwedo2__openingDoors--bg"></div>
+        </div>
+
+        <div class="whatwedo2__openingDoors--right">
+          <div class="header__text_section">
+            <h2>Move the way you want
+                Doors are always opening</h2>
+            <p class="section_descr">Opportunity is everywhere. Get out there and find it with Uber.</p>
+          </div>
+
+          <div class="whatwedo__items">
+            <div class="header__text_subsection">
+              <h3>Drive</h3>
+              <p class="whatwedo__descr">Drive when you want. Find opportunities around you.</p>
+            </div>
+            <div class="header__text_subsection">
+              <h3>Ride</h3>
+              <p class="whatwedo__descr">Tap your phone. Get where you're headed.</p>
+            </div>
+          </div>
+
+          <div class="header__text_links">
+              <a href="#" class="btn">Get started</a>
+              <a href="#" class="links">Questions? Talk to our team →</a>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="whatwedo3">
+    <div class="container">
+      <div class="whatwedo3__finances--with-bg">
+        <div class="header__text_section">
+          <h2>Your finances on an auto-pilot</h2>
+          <p class="section_descr">
+            With Qonto, admin hassle are over! Unlimited history, auto-categorised transactions,
+            simplified transfers entries, budgets, history exportable for accounting... and the list goes on!
+          </p>
+        </div>
+
+        <div class="whatwedo3__list">
+          <h3>Save time</h3>
+          <ul>
+            <li>Intuitive process and simple interface</li>
+            <li>Online and paperless</li>
+            <li>Real-time notifications</li>
+          </ul>
+        </div>
+      </div>
+      <div class="whatwedo3__finances--gridable">
+        <div class="whatwedo3__list">
+          <h3>Monitor your expences</h3>
+          <ul>
+            <li>Specific access/rights by users</li>
+            <li>Physical and virtual Mastercards with adjustable payment limits</li>
+            <li>Dashboards to follow-up on your expenses</li>
+          </ul>
+        </div>
+        <div class="whatwedo3__list">
+          <h3>Make accounting easier</h3>
+          <ul>
+            <li>Unlimited history</li>
+            <li>Read-only access for your accountant.</li>
+            <li>Plug-and-play exports for accounting tools</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="readytogetstarted">
+    <div class="container">
+      <div class="icons">
+        <i class="triangle"></i>
+        <i class="circle"></i>
+        <i class="diamond"></i>
+      </div>
+      <div class="readytogetstarted--gridable">
+        <div class="header__text_section">
+          <h2>Ready to get started?</h2>
+          <p class="section_descr">Get a guided demo with an OKR expert.</p>
+        </div>
+        <div class="readytogetstarted__right">
+          <form class="readytogetstarted__form">
+            <input type="text" class="readytogetstarted__input" placeholder="Email address">
+            <button class="btn--transparent">Get started</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+
+      <div class="footer--gridable">
+        <div class="footer__contacts">
+          <img src="./img/footerlogo.png" alt="Logo" class="footer-logo">
+          <p class="footer__phone-numbers">EU: +49 30 555 7322 77<br>US: +1-415-800-4497</p>
+          <p class="footer__phone-email"><a href="#" target="_blank">info@gohub.ee</a></p>
+          <ul class="social__links">
+            <li class="social__link"><a href="#"><img src="./img/linkedin.png" alt="Linkedin"></a></li>
+            <li class="social__link"><a href="#"><img src="./img/facebook.png" alt="Facebook"></a></li>
+            <li class="social__link"><a href="#"><img src="./img/twitter.png" alt="Twitter"></a></li>
+            <li class="social__link"><a href="#"><img src="./img/github.png" alt="Github"></a></li>
+          </ul>
+        </div>
+
+        <div class="footer__site-map">
+          <div class="footer__site-map--gridable">
+            <div class="footer__site-map--item">
+              <ul class="footer__site-map__lists">
+                <li class="footer__site-map__list"><a href="#">About us</a></li>
+                <li class="footer__site-map__list"><a href="#">Newsroom</a></li>
+                <li class="footer__site-map__list"><a href="#">Blog</a></li>
+                <li class="footer__site-map__list"><a href="#">Gohub API</a></li>
+                <li class="footer__site-map__list"><a href="#">Gift cards</a></li>
+                <li class="footer__site-map__list"><a href="#">Careers</a></li>
+                <li class="footer__site-map__list"><a href="#">Gohub vs Driving jobs</a></li>
+              </ul>
+            </div>
+            <div class="footer__site-map--item">
+              <ul class="footer__site-map__lists">
+                <li class="footer__site-map__list"><a href="#">Offerings</a></li>
+                <li class="footer__site-map__list"><a href="#">Gohub Eats for food delivery</a></li>
+                <li class="footer__site-map__list"><a href="#">Gohub for Business</a></li>
+                <li class="footer__site-map__list"><a href="#">Gohub Freight</a></li>
+                <li class="footer__site-map__list"><a href="#">Gohub Health</a></li>
+              </ul>
+            </div>
+            <div class="footer__site-map--item">
+              <ul class="footer__site-map__lists">
+                <li class="footer__site-map__list"><a href="#">Support</a></li>
+                <li class="footer__site-map__list"><a href="#">Términos y condiciones</a></li>
+                <li class="footer__site-map__list"><a href="#">Privacidad</a></li>
+                <li class="footer__site-map__list"><a href="#">Ayuda</a></li>
+                <li class="footer__site-map__list"><a href="#">Connect</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="year-and-terms">
+        <div class="author">
+          <p>&copy; 2018 Uber Technologies Inc.</p>
+        </div>
+        <div class="terms">
+          <a href="#" class="terms__link">Privacy</a>
+          <a href="#" class="terms__link">Accessibility</a>
+          <a href="#" class="terms__link">Terms</a>
+        </div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
