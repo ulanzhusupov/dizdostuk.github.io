@@ -3,7 +3,7 @@ let gulp = require('gulp'),
     browserSync = require('browser-sync');
 
 gulp.task('sass', () => {
-    return gulp.src('app/sass/**/*/main.sass')
+    return gulp.src('app/sass/**/*.scss')
         .pipe(sass())
         .pipe(gulp.dest('app/css'))
         .pipe(browserSync.reload({stream: true}));
@@ -29,7 +29,7 @@ gulp.task('html', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('app/sass/**/*.+[sass|scss]', gulp.parallel('sass'));
+    gulp.watch('app/sass/**/*.scss', gulp.parallel('sass'));
     gulp.watch('app/*.html', gulp.parallel('html'));
     gulp.watch('app/js/**/*js', gulp.parallel('scripts'));
 });
