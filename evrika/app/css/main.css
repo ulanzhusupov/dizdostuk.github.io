@@ -3,13 +3,98 @@ body {
   font-family: "Myriad Pro", "sans-serif";
   color: #302a31; }
 
+.vert-align-center {
+  display: flex;
+  align-items: center; }
+
+.vert-align-end {
+  display: flex;
+  align-items: flex-end; }
+
+.flex-horizontal-end {
+  display: flex;
+  justify-content: flex-end; }
+
+.link {
+  color: #302a31;
+  font-family: "Myriad Pro", "sans-serif";
+  font-size: 13px; }
+  .link:hover {
+    color: #c1a067;
+    text-decoration: none; }
+
 .nav {
   width: 100%;
-  height: 60px;
+  height: 40px;
   border-bottom: 1px solid #eceaed; }
   .nav__lists {
-    list-style-type: none; }
+    list-style-type: none;
+    margin: 0; }
     .nav__lists__link {
-      display: inline-block; }
-    .nav__lists .lists__link {
-      display: inline-block; }
+      display: inline-block;
+      margin-right: 50px; }
+
+.nav_top_right_link {
+  padding-left: 20px;
+  border-left: 1px solid #eceaed;
+  font-size: 13px;
+  font-family: "Myriad Pro", "sans-serif";
+  color: #302a31; }
+
+.nav_top_right_link:first-child {
+  padding-right: 20px; }
+
+.header__info {
+  width: 90%; }
+  .header__info__search {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #c1a067;
+    position: relative; }
+    .header__info__search .search__input {
+      width: 100%;
+      border: none;
+      color: #302a31;
+      font-size: 14px;
+      font-family: "Myriad Pro", "sans-serif";
+      outline: none; }
+      .header__info__search .search__input::placeholder {
+        text-transform: uppercase;
+        color: #302a31; }
+    .header__info__search .search_link {
+      position: absolute;
+      top: 0;
+      right: 5px; }
+    .header__info__search .search_icon {
+      width: 20px;
+      color: #c1a067; }
+  .header__info__contacts {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 0; }
+
+.header .shopping__cart {
+  background-color: #c1a067;
+  width: 100%;
+  height: 69px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  .header .shopping__cart .shopping_bag {
+    width: 33px; }
+  .header .shopping__cart .product_count {
+    font-size: 13px;
+    color: white;
+    position: absolute;
+    top: 5px;
+    right: 10px; }
+
+.cart_align_end {
+  display: flex;
+  align-items: flex-end;
+  height: 95px; }
+
+.header_info_link {
+  font-weight: 700;
+  font-size: 14px;
+  text-transform: uppercase; }
