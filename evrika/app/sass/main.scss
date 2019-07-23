@@ -19,6 +19,7 @@ body {
   display: flex;
   justify-content: flex-end;
 }
+
 .link {
   color: $fc;
   font-family: $ff;
@@ -56,6 +57,9 @@ body {
 
 
 .header {
+  &__logo {
+    margin-top: 10px;
+  }
   &__info {
     width: 90%;
     &__search{
@@ -109,6 +113,11 @@ body {
       right: 10px;
     }
   }
+  &__menu {
+    width: 100%;
+    background-color: $fc;
+    margin-top: 18px;
+  }
 }
 .cart_align_end {
   display: flex;
@@ -120,3 +129,33 @@ body {
   font-size: 14px;
   text-transform: uppercase;
 }
+
+.menu__list {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  & .menu__item {
+    display: inline-block;
+    padding: 23px 18px;
+    & .menu_link {
+      font-family: $ff !important;
+      font-size: 16px !important;
+      color: #fff !important;
+      &:hover {
+        color: $accent !important;
+        text-decoration: none;
+      }
+    }
+  }
+  & > .sale {
+    background-color: #c16774;
+    & > .menu_link {
+      color: #fff;
+      &:hover {
+        color: #fff;
+      }
+    }
+  }
+}
+
+
