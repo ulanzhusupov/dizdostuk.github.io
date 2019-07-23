@@ -159,3 +159,86 @@ body {
 }
 
 
+/********** Hero Slider *****************/
+.hero {
+  margin-top: 60px;
+  &__slider {
+    height: 404px;
+    position: relative;
+  }
+  &__slider__item {
+    background-repeat: no-repeat !important;
+    background-position-x: 212px !important;
+    background-size: 1220px !important;
+    height: 100%;
+    &__content {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      position: relative;
+      & h1 {
+        text-transform: uppercase;
+        width: 585px;
+        font-family: $ff;
+        font-weight: 700;
+        letter-spacing: 5px;
+        font-size: 46px;
+        color: $fc;
+      }
+    }
+    &__link {
+      position: absolute;
+      bottom: 70px;
+      width: 255px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid $accent;
+      color: $accent;
+      &:hover {
+        text-decoration: none;
+        color: $accent;
+      }
+    }
+  }
+}
+
+.item__content__product {
+  display: flex;
+}
+.item__content__price {
+  align-self: flex-end;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  font-family: $ff;
+  font-size: 13px;
+}
+.slick-list, .slick-track {
+  height: 100%;
+}
+.slick-arrow {
+  display: none !important;
+}
+.slick-dots {
+  list-style-type: none;
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+  display: flex;
+  & li {
+    margin-right: 30px;
+    &:last-child {
+      margin-right: 0;
+    }
+    button {
+      text-indent: -9999px;
+      background: none;
+      border: 2px solid $accent;
+      width: 5px;
+      height: 15px;
+      cursor: pointer;
+      outline: none;
+    }
+  }
+  & .slick-active > button{
+    background: $accent;
+  }
+}

@@ -127,3 +127,75 @@ body {
       color: #fff; }
       .menu__list > .sale > .menu_link:hover {
         color: #fff; }
+
+/********** Hero Slider *****************/
+.hero {
+  margin-top: 60px; }
+  .hero__slider {
+    height: 404px;
+    position: relative; }
+  .hero__slider__item {
+    background-repeat: no-repeat !important;
+    background-position-x: 212px !important;
+    background-size: 1220px !important;
+    height: 100%; }
+    .hero__slider__item__content {
+      display: flex;
+      align-items: center;
+      height: 100%;
+      position: relative; }
+      .hero__slider__item__content h1 {
+        text-transform: uppercase;
+        width: 585px;
+        font-family: "Myriad Pro", "sans-serif";
+        font-weight: 700;
+        letter-spacing: 5px;
+        font-size: 46px;
+        color: #302a31; }
+    .hero__slider__item__link {
+      position: absolute;
+      bottom: 70px;
+      width: 255px;
+      padding-bottom: 10px;
+      border-bottom: 1px solid #c1a067;
+      color: #c1a067; }
+      .hero__slider__item__link:hover {
+        text-decoration: none;
+        color: #c1a067; }
+
+.item__content__product {
+  display: flex; }
+
+.item__content__price {
+  align-self: flex-end;
+  margin-bottom: 25px;
+  margin-left: 25px;
+  font-family: "Myriad Pro", "sans-serif";
+  font-size: 13px; }
+
+.slick-list, .slick-track {
+  height: 100%; }
+
+.slick-arrow {
+  display: none !important; }
+
+.slick-dots {
+  list-style-type: none;
+  position: absolute;
+  bottom: 0px;
+  left: 20%;
+  display: flex; }
+  .slick-dots li {
+    margin-right: 30px; }
+    .slick-dots li:last-child {
+      margin-right: 0; }
+    .slick-dots li button {
+      text-indent: -9999px;
+      background: none;
+      border: 2px solid #c1a067;
+      width: 5px;
+      height: 15px;
+      cursor: pointer;
+      outline: none; }
+  .slick-dots .slick-active > button {
+    background: #c1a067; }
