@@ -7,6 +7,22 @@ body {
   font-family: $ff;
   color: $fc;
 }
+.section__header {
+  margin-top: 95px;
+  margin-bottom: 75px;
+  text-align: center;
+  &--underline {
+    padding-bottom: 15px;
+    border-bottom: 2px solid $accent;
+  }
+  &__text {
+    font-family: $ff;
+    font-size: 36px;
+    font-weight: 700;
+    color: $fc;
+    text-transform: uppercase;
+  }
+}
 .vert-align-center {
   display: flex;
   align-items: center
@@ -19,7 +35,10 @@ body {
   display: flex;
   justify-content: flex-end;
 }
-
+.flex-horizontal-center {
+  display: flex;
+  justify-content: center;
+}
 .link {
   color: $fc;
   font-family: $ff;
@@ -165,6 +184,31 @@ body {
   &__slider {
     height: 404px;
     position: relative;
+    & .slick-dots {
+      list-style-type: none;
+      position: absolute;
+      bottom: 0px;
+      left: 20%;
+      display: flex;
+      & li {
+        margin-right: 30px;
+        &:last-child {
+          margin-right: 0;
+        }
+        button {
+          text-indent: -9999px;
+          background: none;
+          border: 2px solid $accent;
+          width: 5px;
+          height: 15px;
+          cursor: pointer;
+          outline: none;
+        }
+      }
+      & .slick-active > button{
+        background: $accent;
+      }
+    }
   }
   &__slider__item {
     background-repeat: no-repeat !important;
@@ -214,31 +258,94 @@ body {
 .slick-list, .slick-track {
   height: 100%;
 }
-.slick-arrow {
-  display: none !important;
+
+.advantages {
+  margin-top: 67px;
+  & hr {
+    margin-top: 8px;
+  }
+  & .advantage {
+    font-family: $ff;
+    color: $fc;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+  }
 }
-.slick-dots {
-  list-style-type: none;
+
+/************ Product slider styles ***************/
+.product--sale {
   position: absolute;
-  bottom: 0px;
-  left: 20%;
-  display: flex;
-  & li {
-    margin-right: 30px;
-    &:last-child {
-      margin-right: 0;
-    }
-    button {
-      text-indent: -9999px;
-      background: none;
-      border: 2px solid $accent;
-      width: 5px;
-      height: 15px;
-      cursor: pointer;
-      outline: none;
+  left: 0;
+  top: 0;
+  padding: 5px 15px;
+  background: #c16774;
+  display: none;
+  color: #fff;
+  font-family: $ff;
+  font-size: 12px;
+  text-transform: uppercase;
+  &--true {
+    display: block;
+  }
+}
+.bestsellers__item {
+  border-right: 1px solid #eceaed;
+  outline: none;
+}
+.bestsellers__item__content {
+  position: relative;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  &:first-child .product__company,
+  &:first-child .product__type,
+  &:first-child .product__male {
+    margin: 0;
+  }
+  & .product__img {
+    width: 200px;
+  }
+  & a {
+    font-family: $ff;
+    color: $fc;
+    &:hover {
+      color: $accent;
+      text-decoration: none;
     }
   }
-  & .slick-active > button{
-    background: $accent;
+  & .product__price {
+    margin-top: 30px;
   }
+}
+
+.product {
+  &__name {
+    font-family: $ff;
+    color: $fc;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    margin-top: 55px;
+    margin-bottom: 25px;
+  }
+  &__price {
+    display: flex;
+    justify-content: space-around;
+    &--older {
+      text-decoration: line-through;
+      color: #c16774;
+      display: none;
+    }
+  }
+}
+.has-older-price {
+  display: block;
+}
+
+.all_brands {
+  text-transform: uppercase;
+  color: $fc;
+  font-family: $ff;
+  font-size: 14px;
 }

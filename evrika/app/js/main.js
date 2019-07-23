@@ -6,3 +6,12 @@ $('.hero__slider').slick({
     dots: true,
     speed: 3
 });
+
+$('.bestsellers__slider').slick({
+  infinite: true,
+  slidesToShow: 4,
+  arrows: true,
+  autoplay: true,
+  autoplaySpeed: 3000,
+
+});

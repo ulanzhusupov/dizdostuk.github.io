@@ -3,6 +3,20 @@ body {
   font-family: "Myriad Pro", "sans-serif";
   color: #302a31; }
 
+.section__header {
+  margin-top: 95px;
+  margin-bottom: 75px;
+  text-align: center; }
+  .section__header--underline {
+    padding-bottom: 15px;
+    border-bottom: 2px solid #c1a067; }
+  .section__header__text {
+    font-family: "Myriad Pro", "sans-serif";
+    font-size: 36px;
+    font-weight: 700;
+    color: #302a31;
+    text-transform: uppercase; }
+
 .vert-align-center {
   display: flex;
   align-items: center; }
@@ -14,6 +28,10 @@ body {
 .flex-horizontal-end {
   display: flex;
   justify-content: flex-end; }
+
+.flex-horizontal-center {
+  display: flex;
+  justify-content: center; }
 
 .link {
   color: #302a31;
@@ -134,6 +152,26 @@ body {
   .hero__slider {
     height: 404px;
     position: relative; }
+    .hero__slider .slick-dots {
+      list-style-type: none;
+      position: absolute;
+      bottom: 0px;
+      left: 20%;
+      display: flex; }
+      .hero__slider .slick-dots li {
+        margin-right: 30px; }
+        .hero__slider .slick-dots li:last-child {
+          margin-right: 0; }
+        .hero__slider .slick-dots li button {
+          text-indent: -9999px;
+          background: none;
+          border: 2px solid #c1a067;
+          width: 5px;
+          height: 15px;
+          cursor: pointer;
+          outline: none; }
+      .hero__slider .slick-dots .slick-active > button {
+        background: #c1a067; }
   .hero__slider__item {
     background-repeat: no-repeat !important;
     background-position-x: 212px !important;
@@ -176,26 +214,78 @@ body {
 .slick-list, .slick-track {
   height: 100%; }
 
-.slick-arrow {
-  display: none !important; }
+.advantages {
+  margin-top: 67px; }
+  .advantages hr {
+    margin-top: 8px; }
+  .advantages .advantage {
+    font-family: "Myriad Pro", "sans-serif";
+    color: #302a31;
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-transform: uppercase; }
 
-.slick-dots {
-  list-style-type: none;
+/************ Product slider styles ***************/
+.product--sale {
   position: absolute;
-  bottom: 0px;
-  left: 20%;
-  display: flex; }
-  .slick-dots li {
-    margin-right: 30px; }
-    .slick-dots li:last-child {
-      margin-right: 0; }
-    .slick-dots li button {
-      text-indent: -9999px;
-      background: none;
-      border: 2px solid #c1a067;
-      width: 5px;
-      height: 15px;
-      cursor: pointer;
-      outline: none; }
-  .slick-dots .slick-active > button {
-    background: #c1a067; }
+  left: 0;
+  top: 0;
+  padding: 5px 15px;
+  background: #c16774;
+  display: none;
+  color: #fff;
+  font-family: "Myriad Pro", "sans-serif";
+  font-size: 12px;
+  text-transform: uppercase; }
+  .product--sale--true {
+    display: block; }
+
+.bestsellers__item {
+  border-right: 1px solid #eceaed;
+  outline: none; }
+
+.bestsellers__item__content {
+  position: relative;
+  text-align: center;
+  display: grid;
+  justify-content: center; }
+  .bestsellers__item__content:first-child .product__company,
+  .bestsellers__item__content:first-child .product__type,
+  .bestsellers__item__content:first-child .product__male {
+    margin: 0; }
+  .bestsellers__item__content .product__img {
+    width: 200px; }
+  .bestsellers__item__content a {
+    font-family: "Myriad Pro", "sans-serif";
+    color: #302a31; }
+    .bestsellers__item__content a:hover {
+      color: #c1a067;
+      text-decoration: none; }
+  .bestsellers__item__content .product__price {
+    margin-top: 30px; }
+
+.product__name {
+  font-family: "Myriad Pro", "sans-serif";
+  color: #302a31;
+  font-size: 16px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin-top: 55px;
+  margin-bottom: 25px; }
+
+.product__price {
+  display: flex;
+  justify-content: space-around; }
+  .product__price--older {
+    text-decoration: line-through;
+    color: #c16774;
+    display: none; }
+
+.has-older-price {
+  display: block; }
+
+.all_brands {
+  text-transform: uppercase;
+  color: #302a31;
+  font-family: "Myriad Pro", "sans-serif";
+  font-size: 14px; }
