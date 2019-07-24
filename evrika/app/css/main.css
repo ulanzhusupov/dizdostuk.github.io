@@ -228,7 +228,7 @@ body {
 /************ Product slider styles ***************/
 .product--sale {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 0;
   padding: 5px 15px;
   background: #c16774;
@@ -240,28 +240,28 @@ body {
   .product--sale--true {
     display: block; }
 
-.bestsellers__item {
+.mainpage__product__item {
   border-right: 1px solid #eceaed;
   outline: none; }
 
-.bestsellers__item__content {
+.mainpage__product__item__content {
   position: relative;
   text-align: center;
   display: grid;
   justify-content: center; }
-  .bestsellers__item__content:first-child .product__company,
-  .bestsellers__item__content:first-child .product__type,
-  .bestsellers__item__content:first-child .product__male {
+  .mainpage__product__item__content:first-child .product__company,
+  .mainpage__product__item__content:first-child .product__type,
+  .mainpage__product__item__content:first-child .product__male {
     margin: 0; }
-  .bestsellers__item__content .product__img {
+  .mainpage__product__item__content .product__img {
     width: 200px; }
-  .bestsellers__item__content a {
+  .mainpage__product__item__content a {
     font-family: "Myriad Pro", "sans-serif";
     color: #302a31; }
-    .bestsellers__item__content a:hover {
+    .mainpage__product__item__content a:hover {
       color: #c1a067;
       text-decoration: none; }
-  .bestsellers__item__content .product__price {
+  .mainpage__product__item__content .product__price {
     margin-top: 30px; }
 
 .product__name {
@@ -284,8 +284,73 @@ body {
 .has-older-price {
   display: block; }
 
+/*********** Partners **************/
 .all_brands {
   text-transform: uppercase;
-  color: #302a31;
+  color: #c1a067;
   font-family: "Myriad Pro", "sans-serif";
-  font-size: 14px; }
+  font-weight: bold;
+  font-size: 14px;
+  margin-top: 32px; }
+
+.parfume_partner {
+  width: 200px; }
+
+/************** Topics and news ****************/
+.see_all_topicsandnews {
+  margin-top: 30px;
+  text-align: center; }
+  .see_all_topicsandnews a {
+    text-transform: uppercase;
+    font-family: "Myriad Pro", "sans-serif";
+    color: #c1a067;
+    font-weight: bold;
+    letter-spacing: 2px; }
+
+.topics--some {
+  max-width: 550px; }
+
+.topic__item {
+  padding: 35px 0 30px;
+  border-bottom: 1px solid #eceaed; }
+
+.topic__title {
+  font-size: 16px;
+  font-family: "Myriad Pro", "sans-serif";
+  color: #302a31;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-bottom: 15px; }
+
+.topic__date a {
+  font-size: 13px;
+  color: #c1a067; }
+
+.topic__descr {
+  margin-top: 18px;
+  overflow: hidden;
+  text-emphasis: dotted;
+  height: 60px; }
+  .topic__descr p {
+    font-size: 14px;
+    font-family: "Myriad Pro", "sans-serif";
+    color: #302a31; }
+
+.new__item {
+  max-height: 185px;
+  height: 185px;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  background-position-x: left;
+  margin-bottom: 18px;
+  position: relative; }
+
+.new__content {
+  position: absolute;
+  left: 200px; }
+
+.text-left {
+  background-position-x: right !important; }
+  .text-left > .new__content {
+    left: 0;
+    width: 335px; }

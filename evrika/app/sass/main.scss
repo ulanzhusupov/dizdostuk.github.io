@@ -276,7 +276,7 @@ body {
 /************ Product slider styles ***************/
 .product--sale {
   position: absolute;
-  left: 0;
+  left: 10px;
   top: 0;
   padding: 5px 15px;
   background: #c16774;
@@ -289,11 +289,11 @@ body {
     display: block;
   }
 }
-.bestsellers__item {
+.mainpage__product__item {
   border-right: 1px solid #eceaed;
   outline: none;
 }
-.bestsellers__item__content {
+.mainpage__product__item__content {
   position: relative;
   text-align: center;
   display: grid;
@@ -343,9 +343,88 @@ body {
   display: block;
 }
 
+/*********** Partners **************/
 .all_brands {
   text-transform: uppercase;
-  color: $fc;
+  color: $accent;
   font-family: $ff;
+  font-weight: bold;
   font-size: 14px;
+  margin-top: 32px;
+}
+.parfume_partner {
+  width: 200px;
+}
+
+
+/************** Topics and news ****************/
+.see_all_topicsandnews {
+  margin-top: 30px;
+  text-align: center;
+  a {
+    text-transform: uppercase;
+    font-family: $ff;
+    color: $accent;
+    font-weight: bold;
+    letter-spacing: 2px;
+
+  }
+}
+.topics {
+  &--some {
+    max-width: 550px
+  }
+}
+.topic {
+  &__item {
+    padding: 35px 0 30px;
+    border-bottom: 1px solid #eceaed;
+  }
+  &__title {
+    font-size: 16px;
+    font-family: $ff;
+    color: $fc;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 15px;
+  }
+  &__date a {
+    font-size: 13px;
+    color: $accent;
+  }
+  &__descr {
+    margin-top: 18px;
+    overflow: hidden;
+    text-emphasis: dotted;
+    height: 60px;
+    p {
+      font-size: 14px;
+      font-family: $ff;
+      color: $fc;
+    }
+  }
+}
+
+//news
+.new {
+  &__item {
+    max-height: 185px;
+    height: 185px;
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position-x: left;
+    margin-bottom: 18px;
+    position: relative;
+  }
+  &__content {
+    position: absolute;
+    left: 200px;
+  }
+}
+.text-left {
+  background-position-x: right !important;
+  & > .new__content {
+    left: 0;
+    width: 335px;
+  }
 }

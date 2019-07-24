@@ -7,10 +7,10 @@ $('.hero__slider').slick({
     speed: 3
 });
 
-$('.bestsellers__slider').slick({
+$('.mainpage__product__slider').slick({
   infinite: true,
-  slidesToShow: 4,
   arrows: true,
+  slidesToShow: 4,
   autoplay: true,
   autoplaySpeed: 3000,
 
