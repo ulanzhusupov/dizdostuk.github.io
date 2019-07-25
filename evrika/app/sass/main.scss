@@ -7,6 +7,12 @@ body {
   font-family: $ff;
   color: $fc;
 }
+h3 {
+  color: #fff;
+}
+a {
+  transition: color ease-in-out .2s;
+}
 .section__header {
   margin-top: 95px;
   margin-bottom: 75px;
@@ -48,6 +54,13 @@ body {
     text-decoration: none;
   }
 }
+.pos-rel {
+  position: relative;
+}
+
+
+
+
 
 .nav {
   width: 100%;
@@ -72,6 +85,18 @@ body {
 .nav_top_right_link:first-child {
   padding-right: 20px;
 }
+.favourite_count {
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  font-size: 12px;
+  text-align: center;
+  background: $accent;
+  color: #fff;
+  position: absolute;
+  right: 10%;
+}
+
 
 
 
@@ -274,6 +299,31 @@ body {
 }
 
 /************ Product slider styles ***************/
+.mainpage__product__slider .slick-arrow,
+.brands__slider .slick-arrow {
+  position: absolute;
+  z-index: 777;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 19px;
+  height: 32px;
+  text-indent: -9999px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.mainpage__product__slider .slick-prev,
+.brands__slider .slick-prev {
+  left: 0;
+  background: url('../img/arrow-prev.png');
+  background-repeat: no-repeat;
+}
+.mainpage__product__slider .slick-next,
+.brands__slider .slick-next {
+  right: 0;
+  background: url('../img/arrow-next.png');
+  background-repeat: no-repeat;
+}
 .product--sale {
   position: absolute;
   left: 10px;
@@ -355,6 +405,18 @@ body {
 .parfume_partner {
   width: 200px;
 }
+.brands__slider {
+  padding-bottom: 47px;
+}
+.brands__lists {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  margin-top: 50px;
+}
+.brand__item a {
+  letter-spacing: 2px;
+}
 
 
 /************** Topics and news ****************/
@@ -395,7 +457,7 @@ body {
   &__descr {
     margin-top: 18px;
     overflow: hidden;
-    text-emphasis: dotted;
+    width: 465px;
     height: 60px;
     p {
       font-size: 14px;
@@ -419,6 +481,9 @@ body {
   &__content {
     position: absolute;
     left: 200px;
+    & .topic__title {
+      margin-top: 10px;
+    }
   }
 }
 .text-left {
@@ -426,5 +491,128 @@ body {
   & > .new__content {
     left: 0;
     width: 335px;
+  }
+}
+
+/********************** Footer **********************/
+.footer {
+  margin-top: 95px;
+  padding: 70px 0 55px;
+  background: $fc;
+  color: #fff;
+  &__container {
+    padding-bottom: 67px;
+    border-bottom: 1px solid #3f3a41;
+  }
+  &__link_title {
+    font-size: 18px;
+    font-family: $ff;
+    font-weight: bold;
+    margin-bottom: 35px;
+  }
+  &__links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  &__link {
+    font-size: 14px;
+    font-family: $ff;
+    font-weight: normal;
+    margin-bottom: 13px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    & > a{
+      color: #fff;
+      &:hover {
+        color: $accent;
+        text-decoration: none;
+      }
+      & > img {
+        width: 26px;
+      }
+    }
+    & .social__call {
+      margin-left: 10px;
+      &:first-child {
+        margin-left: 15px;
+      }
+    }
+  }
+  &_form {
+    width: 100%;
+    text-align: right;
+    & > input {
+      width: 100%;
+      background: none;
+      font-family: $ff;
+      color: #fff;
+      font-size: 14px;
+      letter-spacing: 2px;
+      border: none;
+      outline: none;
+      padding-bottom: 10px;
+      border-bottom: 2px solid $accent;
+      &::placeholder {
+        text-transform: uppercase;
+        color: #fff;
+      }
+    }
+    & .subscribe {
+      color: $accent;
+      font-family: $ff;
+      font-weight: bold;
+      font-size: 14px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      display: block;
+      margin-top: 10px;
+      &:hover {
+        text-decoration: none;
+        color: #fff;
+      }
+    }
+  }
+}
+.insta_subscribe {
+  margin-top: 55px;
+  display: flex;
+  align-items: center;
+  & .fainst {
+    width: 48px;
+    height: 48px;
+    background: #fff;
+    border-radius: 50%;
+    position: relative;
+    & img {
+      width: 25px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  .subscribe_link {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: $ff;
+    font-weight: 700;
+    letter-spacing: 2px;
+    font-size: 12px;
+    margin-left: 20px;
+    &:hover {
+      text-decoration: none;
+      color: $accent;
+    }
+  }
+}
+
+.terms__conditions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 45px;
+  & .who__develop img {
+    margin-right: 18px;
   }
 }

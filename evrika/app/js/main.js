@@ -15,3 +15,7 @@ $('.mainpage__product__slider').slick({
   autoplaySpeed: 3000,
 
 });
+
+$('.brands__slider').slick({
+  arrows: true
+});
