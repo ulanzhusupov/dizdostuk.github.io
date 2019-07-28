@@ -4,7 +4,8 @@
 
 body {
   box-sizing: border-box;
-  font-family: "Open Sans", "sans-serif"; }
+  font-family: "Open Sans", "sans-serif";
+  color: #fff; }
 
 h1 {
   font-family: "Open Sans", "sans-serif";
@@ -22,7 +23,7 @@ h1 {
   width: 100%;
   height: 100%;
   transition: all ease-in-out 1.5s;
-  margin-top: -100vh; }
+  margin-top: -200vh; }
 
 .vertical_slider__item {
   width: 100%;
@@ -127,3 +128,311 @@ h1 {
   bottom: 113px;
   right: 253px;
   width: 72px; }
+
+/************* Slider page 3 *******************/
+.posa {
+  position: absolute; }
+
+.dn {
+  display: none; }
+
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-bottom: 32px; }
+  .d-flex:last-child {
+    margin-bottom: 0; }
+
+.narush {
+  width: 227px; }
+
+.vertical_slider__head_text3 {
+  top: 70px;
+  left: 67px;
+  font-size: 34px; }
+
+.left_side {
+  top: 173px;
+  left: 26px; }
+  .left_side .d-flex {
+    margin-bottom: 55px; }
+    .left_side .d-flex:last-child {
+      margin-bottom: 0; }
+
+.item__text {
+  text-align: right; }
+
+.slide_page3_num {
+  font-size: 28px; }
+
+.slide_page3_name {
+  font-size: 20px; }
+
+.icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 77px;
+  height: 77px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  align-self: center;
+  text-align: center;
+  margin-left: 10px; }
+  .icon img {
+    width: 52px; }
+
+.amilin {
+  position: relative;
+  top: -61px;
+  left: 116px; }
+
+/**************** Center ****************/
+.beta {
+  width: 100px;
+  height: 100px;
+  background: rgba(255, 255, 255, 0.3);
+  display: block;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 50px;
+  font-weight: 700;
+  color: #731145;
+  margin: 0 auto; }
+
+.content_center {
+  top: 98px;
+  left: 339px;
+  text-align: center; }
+  .content_center_item:nth-child(2) {
+    display: flex;
+    margin-top: 130px; }
+  .content_center_item:last-child > p {
+    margin: 50px 0; }
+  .content_center_item:last-child .d-flex {
+    justify-content: center; }
+  .content_center--left {
+    width: 170px;
+    text-align: right;
+    margin-right: 28px; }
+  .content_center--right {
+    width: 186px;
+    text-align: left; }
+
+.glukagon {
+  position: relative;
+  top: 25px; }
+
+/*********** Content right ****************/
+.content_right {
+  top: 196px;
+  right: 34px; }
+  .content_right .d-flex {
+    justify-content: flex-start; }
+    .content_right .d-flex .icon {
+      margin-left: 0;
+      margin-right: 10px; }
+
+.insulin_resistance {
+  border-radius: 15px;
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0));
+  padding: 15px 10px; }
+  .insulin_resistance .insulin_text {
+    text-align: center;
+    margin-bottom: 25px; }
+  .insulin_resistance .organ_lists .d-flex {
+    justify-content: flex-start;
+    margin-bottom: 15px; }
+    .insulin_resistance .organ_lists .d-flex:last-child {
+      margin-bottom: 0; }
+
+.cube {
+  position: absolute; }
+
+.slide3_cube1 {
+  top: 71px;
+  left: 13px;
+  width: 37px;
+  opacity: 0.5; }
+
+.slide3_cube2 {
+  top: 112px;
+  right: -29px;
+  width: 127px;
+  opacity: 0.5; }
+
+.slide3_cube3 {
+  left: 147px;
+  bottom: -32px;
+  width: 188px;
+  opacity: 0.5;
+  transform: rotate(90deg); }
+
+.hr {
+  position: absolute;
+  background-color: #fff; }
+
+.left_hr1 {
+  width: 130px;
+  left: 317px;
+  top: 33px;
+  transform: rotate(-14deg); }
+
+.left_hr2 {
+  width: 130px;
+  left: 317px;
+  top: 22px;
+  transform: rotate(-14deg); }
+
+.left_hr3 {
+  width: 176px;
+  left: 299px;
+  top: 100px;
+  transform: rotate(-38deg); }
+
+.left_hr4 {
+  width: 176px;
+  left: 308px;
+  top: 107px;
+  transform: rotate(-38deg); }
+
+.left_hr5 {
+  width: 255px;
+  transform: rotate(-47deg);
+  top: 152px;
+  left: 258px; }
+
+.left_hr6 {
+  width: 116px;
+  transform: rotate(30deg);
+  top: 304px;
+  left: 308px; }
+
+.left_hr7 {
+  width: 97px;
+  top: 346px;
+  left: 321px; }
+
+.left_hr8 {
+  width: 14px;
+  transform: rotate(90deg);
+  top: 280px;
+  left: 266px; }
+
+.right_hr1 {
+  width: 130px;
+  right: 276px;
+  top: 33px;
+  transform: rotate(14deg); }
+
+.right_hr2 {
+  width: 130px;
+  right: 274px;
+  top: 22px;
+  transform: rotate(14deg); }
+
+.right_hr3 {
+  width: 150px;
+  right: 265px;
+  top: 73px;
+  transform: rotate(33deg); }
+
+.right_hr4 {
+  width: 150px;
+  right: 273px;
+  top: 83px;
+  transform: rotate(33deg); }
+
+.center_hr1 {
+  width: 95px;
+  top: 207px;
+  left: 118px;
+  transform: rotate(90deg); }
+
+.center_hr2 {
+  width: 95px;
+  top: 207px;
+  left: 154px;
+  transform: rotate(90deg); }
+
+.center_hr3 {
+  width: 245px;
+  top: 282px;
+  left: 61px;
+  transform: rotate(90deg); }
+
+.center_hr4 {
+  width: 36px;
+  bottom: 103px;
+  left: 163px;
+  transform: rotate(90deg); }
+
+.center_hr5 {
+  width: 36px;
+  bottom: 103px;
+  left: 173px;
+  transform: rotate(90deg); }
+
+.center_hr6 {
+  width: 20px;
+  bottom: 216px;
+  left: 189px;
+  transform: rotate(90deg); }
+
+.center_hr7 {
+  width: 20px;
+  bottom: 168px;
+  left: 189px;
+  transform: rotate(90deg); }
+
+/***************/
+.pagination {
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translate(0px, -50%); }
+
+.pagination_dot {
+  width: 15px;
+  height: 15px;
+  background: #fff;
+  border-radius: 50%;
+  display: block;
+  margin-bottom: 15px;
+  cursor: pointer; }
+
+a.active {
+  background-color: orange; }
+
+.next_slide {
+  position: absolute;
+  background-color: orange;
+  bottom: 5px;
+  left: 50%;
+  border-radius: 50%;
+  box-shadow: 0px 69px 45px 119px orange;
+  transform: translate(-50%); }
+  .next_slide span {
+    position: relative;
+    top: -30px; }
+  .next_slide .arrow {
+    width: 25px;
+    height: 1px;
+    background-color: #fff;
+    transform: rotate(45deg);
+    position: relative;
+    top: -16px;
+    left: 30px; }
+    .next_slide .arrow::after {
+      content: '';
+      display: block;
+      width: 25px;
+      height: 1px;
+      background-color: #fff;
+      transform: rotate(90deg);
+      position: relative;
+      top: -13px;
+      left: 12px; }
