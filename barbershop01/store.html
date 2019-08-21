@@ -5,12 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Price</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
   <header class="main-header">
     <nav class="main-navigation">
       <a href="index.html" class="main-header-logo">
-        <img src="img/logo.svg" alt="Логотип" width="111px" height="24px">
+        <img src="img/logo.png" alt="Логотип" width="111px" height="24px">
       </a>
       <ul class="site-navigation">
         <li><a href="info.html">Информация</a></li>
@@ -25,7 +27,7 @@
     </nav>
   </header>
 
-  <main class="main-container">
+  <main class="store-container">
     <h2 class="page-title">СРЕДСТВА ДЛЯ УХОДА</h2>
     <ul class="breadcrumbs">
       <li><a href="#">Главная</a></li>
@@ -58,6 +60,103 @@
             <a href="#" class="button">Купить</a>
           </p>
         </li>
+
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">
+              <span class="catalog-category">Увлажняющий кондиционер</span>
+              <span class="catalog-item-title">"Baxter of California"</span>
+            </a>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="img/product-2.jpg" alt="Набор для путешествий" width="220" height="165">
+            </a>
+          </p>
+          <p class="catalog-item-price">
+            <b>750р</b>
+            <a href="#" class="button" error>Купить</a>
+          </p>
+        </li>
+
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">
+              <span class="catalog-category">Гель для волос</span>
+              <span class="catalog-item-title">"Suavecito"</span>
+            </a>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="img/product-3.jpg" alt="Гель для волос width="220" height="165">
+            </a>
+          </p>
+          <p class="catalog-item-price">
+            <b>290р</b>
+            <a href="#" class="button">Купить</a>
+          </p>
+        </li>
+
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">
+              <span class="catalog-category">Глина для укладки волос</span>
+              <span class="catalog-item-title">"American Crew"</span>
+            </a>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="img/product-4.jpg" alt="Глина для укладки волос" width="220" height="165">
+            </a>
+          </p>
+          <p class="catalog-item-price">
+            <b>500р</b>
+            <a href="#" class="button">Купить</a>
+          </p>
+        </li>
+
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">
+              <span class="catalog-category">Гель для волос</span>
+              <span class="catalog-item-title">"American Crew"</span>
+            </a>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="img/product-5.jpg" alt="Гель для волос" width="220" height="165">
+            </a>
+          </p>
+          <p class="catalog-item-price">
+            <b>300р</b>
+            <a href="#" class="button">Купить</a>
+          </p>
+        </li>
+
+        <li class="catalog-item">
+          <h3>
+            <a href="catalog-item.html">
+              <span class="catalog-category">Набор для бритья</span>
+              <span class="catalog-item-title">"Baxter of California"</span>
+            </a>
+          </h3>
+          <p class="catalog-item-image">
+            <a href="catalog-item.html">
+              <img src="img/product-6.jpg" alt="Набор для бритья" width="220" height="165">
+            </a>
+          </p>
+          <p class="catalog-item-price">
+            <b>3 900р</b>
+            <a href="#" class="button">Купить</a>
+          </p>
+        </li>
+      </ul>
+
+      <ul class="pagination-list">
+        <li class="pagination-item"><a href="#">1</a></li>
+        <li class="pagination-item pagination-current"><a>2</a></li>
+        <li class="pagination-item"><a href="#">3</a></li>
+        <li class="pagination-item"><a href="#">4</a></li>
       </ul>
     </section>
   </main>
@@ -77,10 +176,31 @@
         <li><a href="#" class="social-button">Inst</a></li>
       </ul>
     </div>
-    <p>
+    <p class="footer-copyright">
       <b>Разработано: </b><br>
       <a href="#" class="social-button">HTML-Academy</a>
     </p>
   </footer>
+
+  <section class="modal modal-login">
+    <h2>Личный кабинет</h2>
+    <!--Здесь будет форма-->
+    <form action="post" class="index-login">
+      <p>ВВедите пожалуйста свой логин и пароль</p>
+      <p>
+        <label for="index-login-username">Логин</label>
+        <input type="text" id="index-login-username">
+      </p>
+      <p>
+        <label for="index-login-password">Пароль</label>
+        <input type="password" id="index-login-password">
+      </p>
+      <p class="login-checkbox">
+        <label> <input type="checkbox"> Запомните меня!</label>
+        <a href="#" class="restore">Я забыл пароль!</a>
+      </p>
+    </form>
+    <span class="modal-close">x</span>
+  </section>
 </body>
 </html>

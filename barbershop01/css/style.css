@@ -197,3 +197,33 @@ a {
 .restore:focus {
     text-decoration: none;
 }
+
+/************** Store item styles ************************/
+.store-container {
+    color: #000;
+
+    background-color: #fdfaf7;
+    background-image: url("../img/pattern-light.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.breadcrumbs {
+    list-style: none;
+}
+
+.breadcrumbs a {
+    color: #000;
+    text-decoration: none;
+}
+
+.breadcrumbs a:hover,
+.breadcrumbs a:focus {
+    text-decoration: none;
+    color: rgb(43, 42, 42);
+}
+
+.breadcrumbs-current {
+    color: #aba9a7;
+}
+
